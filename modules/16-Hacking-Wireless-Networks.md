@@ -129,10 +129,6 @@ Antenna Types:
 	- Requires additional computing resources
 	- **CCMP provides Data confidentiality (AES), authentication, and access control**
 
-<p align="center">
-<img src="https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/a6960e23a5da2cc3c689416f284376f35d599c58/encryption2.png" />
-</p>
-
 | Wireless Standard | Encryption | IV Size (Bits) | Key Length (Bits) | Integrity Check |
 |-------------------|------------|----------------|-------------------|-----------------|
 | WEP               | RC4        | 24             | 40/104            | CRC-32          |
