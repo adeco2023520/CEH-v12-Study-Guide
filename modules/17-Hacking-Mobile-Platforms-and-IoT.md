@@ -51,7 +51,7 @@
       - Pangu
       - Redsn0w
       - Absinthe
-      - Cydia
+      - Cydia (is not a jailbreaking tool, but a market place that can be installed on a device that is jailbroken)
     - **Techniques**
       - **Untethered** - kernel remains patched after reboot, with or without a system connection
       - **Semi-Tethered** - reboot no longer retains patch; must use installed jailbreak software to re-jailbreak
