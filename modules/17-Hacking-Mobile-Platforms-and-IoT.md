@@ -108,14 +108,14 @@ All other attacks presented on previous chapter are suceptible to mobile devices
   - **BlueScanner** - finds devices around you
   - **BT Browser** - another tool for finding and enumerating devices
   - **Bluesniff** and **btCrawler** - sniffing programs with GUI
-  - **Bloover** - can perform Bluebugging
+  - **(!!) Bloover** - can perform Bluebugging
   - **PhoneSnoop** - good spyware option for Blackberry
   - **Super Bluetooth Hack** - all-in-one package that allows you to do almost anything
 
 ## Improving Mobile Security
 - Always check OS and Apps are up to date
 - Screen Locks + Passwords
-- Secure Wireless comunication
+- Secure Wireless communication
 - No Jailbreaking or Rooting
 - Don't store sensitive information on mobile (like confidential information from company)
 - Remote desktop (e.g. Citrix)
@@ -133,9 +133,7 @@ All other attacks presented on previous chapter are suceptible to mobile devices
 ### **- What is IoT?**
 ***The Internet of Things (IoT)** describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the internet.*
 
-- Traditional fields of embedded systems, wireless sensor networks, control systems, automation (including home and building automation), and others all contribute to enabling the Internet of things. 
-
-- ![iot](https://www.researchgate.net/profile/Akram_Hakiri/publication/281896657/figure/fig1/AS:391492888743939@1470350586428/High-level-IoT-architecture.png)
+- Traditional fields of embedded systems, wireless sensor networks, control systems, automation (including home and building automation), and others all contribute to enabling the Internet of things.
 
 - **Three Basic Components**
   - Sensing Technology
@@ -156,7 +154,7 @@ All other attacks presented on previous chapter are suceptible to mobile devices
 *Edge Computing is a distributed computing paradigm in which processing and computation are performed mainly on classified device nodes known as smart devices or edge devices as opposed to processed in a centralized cloud environment or data centers.*
 
 <p align="center">
-<img width=70%"" src="https://www.xenonstack.com/images/blog/2019/11/edge-computing-services-solutions-xenonstack.png" />
+<img width=70%"" src="https://winsystems.com/wp-content/uploads/2017/12/cloud-fog-edge_infographic.jpg" />
 </p>
 
 - It helps to provide server resources, data analysis, and artificial intelligence to data collection sources and cyber-physical sources like smart sensors and actuators.
@@ -194,7 +192,7 @@ All other attacks presented on previous chapter are suceptible to mobile devices
   - Power-Line Communication (PLC)
   - Multimedia over Coax Alliance (MoCA)
 
-### **IoT Operating Systems**
+### **IoT Operating Systems** (probably wont ask)
 - **RIOT OS** - Embedded systems, actuator boards, sensors; is energy efficient
 - **ARM Mbed OS** - Mostly used on wearables and other low-powered devices
 - **RealSense OS X** - Intel's depth sensing version; mostly found in cameras and other sensors
@@ -224,30 +222,6 @@ Reduces costs by maximizing existing resources. This is accomplished with **mult
 
 ## <u>IoT Vulnerabilities and Attacks:</u>
 
-### **OWASP Top 10 IoT Vulnerabilities (2014)**
-- **I1 - Insecure Web Interface** 
-  - Problems such as account enumeration, weak credentials, and no account lockout
-- **I2 - Insufficient Authentication/Authorization** 
-  - Assumes interfaces will only be exposed on internal networks and thus is a flaw
-- **I3 - Insecure Network Services** 
-  - May be susceptible to buffer overflow or DoS attacks
-- **I4 - Lack of Transport Encryption/Integrity Verification** 
-  - Data transported without encryption
-- **I5 - Privacy Concerns** 
-  - Due to collection of personal data
-- **I6 - Insecure Cloud Interface** 
-  - Easy-to-guess credentials make enumeration easy
-- **I7 - Insecure Mobile Interface** 
-  - Easy-to-guess credentials on mobile interface
-- **I8 - Insufficient Security Configurability** 
-  - Cannot change security which causes default passwords and configuration
-- **I9 - Insecure Software/Firmware** 
-  - Lack of a device to be updated or devices that do not check for updates
-- **I10 - Poor Physical Security** 
-  - Because of the nature of devices, these can easily be stolen
-
----
-
 ### **OWASP Top 10 IoT Vulnerabilities (2018)**
 
 - **1. Weak, guessable, or hardcoded passwords**
@@ -274,9 +248,8 @@ and lack of notifications of security changes due to updates.
   - Devices or systems shipped with insecure default settings or lack the ability to make the system more secure by restricting operators from modifying configurations.
 - **10. Lack of physical hardening**
   - Lack of physical hardening measures, allowing potential attackers to gain sensitive information that can help in a future remote attack or take local control of the device.
+
 ---
-
-
 
 ## <u>Common IoT Attack Areas</u>
 1. Device memory containing credentials
@@ -296,7 +269,7 @@ and lack of notifications of security changes due to updates.
 
 ## <u>IoT Threats</u>
 1. **DDoS Attack**
-2. **HVAC System attacks** - Attacks on HVAC systems
+2. **HVAC System attacks** - Attacks on HVAC (heating/airo) systems
 3. **Rolling code attack** - Used to steal cars; The ability to jam a key fob's communications, steal the code and then create a subsequent code
 4. **BlueBorne attack** - Attacks against Bluetooth devices
 5. **Jamming attack**
