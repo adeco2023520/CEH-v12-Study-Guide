@@ -4,9 +4,8 @@ title: Home
 nav_order: 1
 has_toc: false
 ---
-<p align="center">
-<img width="100%" src="https://www.eccouncil.org/cybersecurity-exchange/wp-content/uploads/2022/09/cehv12-new-learning-framework-blog.jpg" />
-</p>
+![Image]({{ site.baseurl }}/assets/images/cehv12-new-learning-framework-blog.jpg)
+{: .mx-auto }
 
 # Index
 
