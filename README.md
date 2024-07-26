@@ -1,5 +1,5 @@
 <p align="center">
-<img width="100%" src="https://user-images.githubusercontent.com/11171288/113489611-d57a1680-94e2-11eb-89a8-e7050c0cd0e9.png" />
+<img width="100%" src="https://www.eccouncil.org/cybersecurity-exchange/wp-content/uploads/2022/09/cehv12-new-learning-framework-blog.jpg" />
 </p>
 
 
