@@ -45,10 +45,15 @@ enable_copy_code_button: true
 # Enable or disable heading anchors
 heading_anchors: true
 
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"
+
 # Aux links for the upper right navigation
 aux_links:
-#  "Title":
-#    - "https//example.com/"
+ "Hardrockdevops.com":
+   - "https//www.hardrockdevops.com/"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
