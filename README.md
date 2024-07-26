@@ -7,8 +7,9 @@
 
 ## 📢 About this repo
 
-* **Unofficial Study Guide for CEH v11 exam, forked from:**
-* <small>https://github.com/scottymcraig/CEHv11StudyGuide</small> 
+* **Unofficial Study Guide for CEH v12 exam, forked from:**
+* <small>https://github.com/imrk51/CEH-v11-Study-Guide</small> 
+* <small> forked from: https://github.com/scottymcraig/CEHv11StudyGuide</small> 
 * <small> forked from: https://github.com/Samsar4/CEH-v10-Study-Guide</small> 
     * **Targetted Changes:**
         - [+] Modules update
@@ -30,7 +31,7 @@
 
 # Index
 
-**All Modules in one single file**: [![markdown](https://img.shields.io/badge/Markdown-.md-silver.svg)](https://github.com/imrk51/CEH-v11-Study-Guide/blob/master/modules/All-Modules.md) [![HTML](https://img.shields.io/badge/HTML-.html-blue.svg)](https://github.com/Samsar4/CEH-v11-Study-Guide/blob/master/modules/All-Modules.html)
+**All Modules in one single file**: [![markdown](https://img.shields.io/badge/Markdown-.md-silver.svg)](modules/All-Modules.md) [![HTML](https://img.shields.io/badge/HTML-.html-blue.svg)](modules/All-Modules.html)
 
 
 
