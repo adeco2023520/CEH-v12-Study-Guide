@@ -1,3 +1,8 @@
+---
+layout: default
+title: 11 - Session Hijacking
+nav_order: 12
+---
 # <u>Session Hijacking</u>
 
 > ⚡︎ **This chapter has [practical labs](https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/10-Session-Hijacking)**

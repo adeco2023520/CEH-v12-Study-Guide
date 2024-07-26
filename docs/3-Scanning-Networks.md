@@ -1,3 +1,8 @@
+---
+layout: default
+title: 02 - Reconnaissance and Footprinting
+nav_order: 3
+---
 # Scanning and Enumeration
 
 > ⚡︎ **This chapter has practical labs for [Scanning Networks (1)](https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/2-Scanning-Networks) and [Enumeration (2)](https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/3-Enumeration)**

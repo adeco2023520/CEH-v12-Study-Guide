@@ -1,3 +1,8 @@
+---
+layout: default
+title: 08 - Sniffing
+nav_order: 9
+---
 # Sniffing 
 
 > ⚡︎ **This chapter has [practical labs](https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/7-Sniffing)**
@@ -234,7 +239,3 @@ Tries to update information regarding a specific port in a race condition
       - If suspect accepts the packet, is a good indication that he is sniffing the network / using NIC in promiscuous mode.
   - Use **Nmap** with nse-script for **Sniffer Detect**:
       - **`nmap --script=sniffer-detect <target>`**
-  
-
-
-

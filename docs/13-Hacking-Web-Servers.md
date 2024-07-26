@@ -1,3 +1,8 @@
+---
+layout: default
+title: 13 - Reconnaissance and Footprinting
+nav_order: 14
+---
 # Hacking Web Servers
 
 ## <u>Web Server Attack Methodology</u>

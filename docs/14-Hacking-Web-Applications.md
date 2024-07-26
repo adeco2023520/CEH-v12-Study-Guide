@@ -1,3 +1,8 @@
+---
+layout: default
+title: 14 - Hacking Web Applications
+nav_order: 15
+---
 # Hacking Web Applications
 
 ## <u>Web Organizations</u>

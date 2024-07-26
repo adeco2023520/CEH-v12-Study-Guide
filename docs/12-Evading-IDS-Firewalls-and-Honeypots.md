@@ -1,3 +1,8 @@
+---
+layout: default
+title: 12 - Evading IDS, Firewalls and Honeypots
+nav_order: 13
+---
 # Evading IDS, Firewalls and Honeypots
 
 ## <u>IDS/IPS - Basic Concepts</u>

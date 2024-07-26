@@ -1,3 +1,8 @@
+---
+layout: default
+title: 16 - Hacking Wireless Networks
+nav_order: 17
+---
 # Hacking Wireless Networks
 
 ## <u>Concepts and Terminology</u>

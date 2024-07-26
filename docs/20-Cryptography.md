@@ -1,3 +1,8 @@
+---
+layout: default
+title: 20 - Cryptography
+nav_order: 21
+---
 # Cryptography
 
 <p align="center">

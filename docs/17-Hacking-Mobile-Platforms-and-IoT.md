@@ -1,3 +1,8 @@
+---
+layout: default
+title: 17 - Hacking Mobile Platforms and IoT
+nav_order: 18
+---
 # Hacking Mobile Platforms and IoT
 
 # <u>A) Mobile Platform Hacking</u>

@@ -1,3 +1,8 @@
+---
+layout: default
+title: 02 - Reconnaissance and Footprinting
+nav_order: 3
+---
 # <u> Reconnaissance and Footprinting</u>
 
 > ⚡︎ **This chapter have [practical labs](https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/1-Footprinting-and-Reconnaissance)**
@@ -542,4 +547,3 @@ Site Technology — This section includes details on:
 *Alternative for Shodan.*
 
 ![censys](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/403be7a4514b6e0af36e0f568328372a5ce09cbf/censys.png)
-

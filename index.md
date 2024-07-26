@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: home
 title: Home
+nav_order: 1
+has_toc: false
 ---
 <p align="center">
 <img width="100%" src="https://www.eccouncil.org/cybersecurity-exchange/wp-content/uploads/2022/09/cehv12-new-learning-framework-blog.jpg" />
@@ -24,7 +26,7 @@ title: Home
 12. [Module 12 - Evading IDS, Firewalls, and Honeypots](docs/12-Evading-IDS-Firewalls-and-Honeypots.md)
 13. [Module 13 - Hacking Web Servers](docs/13-Hacking-Web-Servers.md)
 14. [Module 14 - Hacking Web Applications](docs/14-Hacking-Web-Applications.md)
-15. [Module 15 - SQL Injection](docs/14-Pentesting.md)
+15. [Module 15 - Pentesting](docs/15-Pentesting)
 16. [Module 16 - Hacking Wireless Networks](docs/16-Hacking-Wireless-Networks.md)
 17. [Module 17 - Hacking Mobile Platforms](docs/17-Hacking-Mobile-Platforms-and-IoT.md)
 18. [Module 18 - Hacking IoT and OT Hacking](docs/17-Hacking-Mobile-Platforms-and-IoT.md)

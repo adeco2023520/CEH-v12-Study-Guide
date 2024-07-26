@@ -1,3 +1,8 @@
+---
+layout: default
+title: 10 - Denial of Service
+nav_order: 11
+---
 # Denial of Service
 
 > ⚡︎ **This chapter has [practical labs](https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/9-Denial-of-Service)**
