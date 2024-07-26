@@ -3,7 +3,7 @@ layout: default
 title: 01 - Introduction
 nav_order: 2
 ---
-# <u>Introduction</u>
+# Introduction
 {: .no_toc }
 - TOC
 {:toc}

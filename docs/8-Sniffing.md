@@ -3,7 +3,10 @@ layout: default
 title: 08 - Sniffing
 nav_order: 9
 ---
-# Sniffing 
+# Sniffing
+{: .no_toc }
+- TOC
+{:toc}
 
 > ⚡︎ **This chapter has [practical labs](https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/7-Sniffing)**
 

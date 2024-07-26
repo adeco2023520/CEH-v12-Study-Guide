@@ -3,7 +3,10 @@ layout: default
 title: 02 - Reconnaissance and Footprinting
 nav_order: 3
 ---
-# <u> Reconnaissance and Footprinting</u>
+# Reconnaissance and Footprinting
+{: .no_toc }
+- TOC
+{:toc}
 
 > ⚡︎ **This chapter have [practical labs](https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/1-Footprinting-and-Reconnaissance)**
 

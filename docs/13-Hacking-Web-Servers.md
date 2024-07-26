@@ -4,6 +4,9 @@ title: 13 - Reconnaissance and Footprinting
 nav_order: 14
 ---
 # Hacking Web Servers
+{: .no_toc }
+- TOC
+{:toc}
 
 ## <u>Web Server Attack Methodology</u>
 

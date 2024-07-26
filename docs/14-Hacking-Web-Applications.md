@@ -4,6 +4,9 @@ title: 14 - Hacking Web Applications
 nav_order: 15
 ---
 # Hacking Web Applications
+{: .no_toc }
+- TOC
+{:toc}
 
 ## <u>Web Organizations</u>
 

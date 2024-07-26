@@ -4,6 +4,9 @@ title: 19 - Cloud Computing
 nav_order: 20
 ---
 # Cloud Computing
+{: .no_toc }
+- TOC
+{:toc}
 
 ## <u>Cloud Computing Basics</u>
 
