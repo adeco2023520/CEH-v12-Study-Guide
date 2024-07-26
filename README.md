@@ -19,21 +19,12 @@
 
 * The objective of this repo is to clarify all topics presented on [CEH v11](https://iclass.eccouncil.org/our-courses/certified-ethical-hacker-ceh/) (ANSI) exam.
 
-## LAST UPDATED ON Nov 5th 2021
-
-### ⚡︎ **This study guide have some [practical labs] to test your knowledge and learn by doing.**
----
-
-* ⚠️ **Important note about the exam:**
-
-    - **CEH v11** will be covering new topics like:
-        - *Hacking challenges, Emerging attack vectors(Web API, Web Shell etc), Cointainers, Reverse engineering (Static and Dynamic analysis), WPA3, Parrot OS and more.*[[+]](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/)
+- **CEH** will be covering new topics like:
+    - *Hacking challenges, Emerging attack vectors(Web API, Web Shell etc), Cointainers, Reverse engineering (Static and Dynamic analysis), WPA3, Parrot OS and more.*[[+]](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/)
 
 # Index
 
 **All Modules in one single file**: [![markdown](https://img.shields.io/badge/Markdown-.md-silver.svg)](modules/All-Modules.md) [![HTML](https://img.shields.io/badge/HTML-.html-blue.svg)](modules/All-Modules.html)
-
-
 
 1. [Module 01 - Introduction to Ethical Hacking](modules/1-Introduction.md)
 2. [Module 02 - Footprinting and Reconnaissance](modules/2-Footprinting-and-Reconnaissance.md)
