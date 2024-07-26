@@ -53,5 +53,5 @@
 16. [Module 16 - Hacking Wireless Networks](modules/16-Hacking-Wireless-Networks.md)
 17. [Module 17 - Hacking Mobile Platforms](modules/17-Hacking-Mobile-Platforms-and-IoT.md)
 18. [Module 18 - Hacking IoT and OT Hacking](modules/17-Hacking-Mobile-Platforms-and-IoT.md)
-19. [Module 19 - Cloud Computing](master/modules/19-Cloud%20Computing.md)
-20. [Module 20 - Cryptography](master/modules/20-Cryptography.md)
+19. [Module 19 - Cloud Computing](modules/19-Cloud%20Computing.md)
+20. [Module 20 - Cryptography](modules/20-Cryptography.md)
