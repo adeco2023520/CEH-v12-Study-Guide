@@ -34,7 +34,7 @@
 
 
 
-1. [Module 01 - Introduction to Ethical Hacking](blob/main/modules/1-Introduction.md)
+1. [Module 01 - Introduction to Ethical Hacking](modules/1-Introduction.md)
 2. [Module 02 - Footprinting and Reconnaissance](https://github.com/imrk51/CEH-v11-Study-Guide/blob/master/modules/2-Footprinting-and-Reconnaissance.md)
 3. [Module 03 - Scanning Networks](https://github.com/imrk51/CEH-v11-Study-Guide/blob/master/modules/3-Scanning-Networks.md)
 4. [Module 04 - Enumeration](https://github.com/imrk51/CEH-v11-Study-Guide/blob/main/modules/3-Scanning-Networks.md)
