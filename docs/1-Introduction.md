@@ -8,7 +8,8 @@ nav_order: 2
 - TOC
 {:toc}
 
-## <u> Fundamental Security Concepts </u>
+## Fundamental Security Concepts
+
 The whole principle is to avoid **Theft, Tampering and Disruption** of the systems through **CIA Triad** (Confidentiality, Integrity and Availability).
 
 <p align="center">
