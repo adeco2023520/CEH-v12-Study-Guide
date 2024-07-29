@@ -5,8 +5,15 @@ nav_order: 3
 ---
 # Reconnaissance and Footprinting
 {: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
 - TOC
 {:toc}
+</details>
 
 > ⚡︎ **This chapter have [practical labs](https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/1-Footprinting-and-Reconnaissance)**
 

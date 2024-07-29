@@ -5,8 +5,15 @@ nav_order: 14
 ---
 # Hacking Web Servers
 {: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
 - TOC
 {:toc}
+</details>
 
 ## Web Server Attack Methodology
 

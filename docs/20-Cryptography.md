@@ -5,8 +5,15 @@ nav_order: 21
 ---
 # Cryptography
 {: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
 - TOC
 {:toc}
+</details>
 
 <p align="center">
 <img width="70%" src="https://cdn.ttgtmedia.com/rms/onlineImages/security_cissp_cryptography_mobile.jpg" />

@@ -5,8 +5,15 @@ nav_order: 11
 ---
 # Denial of Service
 {: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
 - TOC
 {:toc}
+</details>
 
 > ⚡︎ **This chapter has [practical labs](https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/9-Denial-of-Service)**
 

@@ -5,8 +5,15 @@ nav_order: 20
 ---
 # Cloud Computing
 {: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
 - TOC
 {:toc}
+</details>
 
 ## Cloud Computing Basics
 

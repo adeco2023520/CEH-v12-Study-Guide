@@ -5,8 +5,15 @@ nav_order: 2
 ---
 # Introduction
 {: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
 - TOC
 {:toc}
+</details>
 
 ## Fundamental Security Concepts
 

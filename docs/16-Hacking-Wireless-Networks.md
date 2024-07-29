@@ -5,8 +5,15 @@ nav_order: 17
 ---
 # Hacking Wireless Networks
 {: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
 - TOC
 {:toc}
+</details>
 
 ## Concepts and Terminology
 

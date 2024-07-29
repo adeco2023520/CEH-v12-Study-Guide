@@ -5,8 +5,15 @@ nav_order: 18
 ---
 # Hacking Mobile Platforms and IoT
 {: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
 - TOC
 {:toc}
+</details>
 
 # A) Mobile Platform Hacking
 

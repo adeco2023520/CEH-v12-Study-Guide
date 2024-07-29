@@ -5,8 +5,15 @@ nav_order: 13
 ---
 # Evading IDS, Firewalls and Honeypots
 {: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
 - TOC
 {:toc}
+</details>
 
 ## IDS/IPS - Basic Concepts
 
