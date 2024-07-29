@@ -37,7 +37,7 @@ Basically keep tracking of everthing, like, who's been logging in when are they 
 - **Non-Repudiation**
 Non-repudiation is the assurance that someone cannot deny the validity of something. Non-repudiation is a legal concept that is widely used in information security and refers to a service, which provides proof of the origin of data and the integrity of the data.
 
-### **Security, Functionality and Usability balance**
+### Security, Functionality and Usability balance
 
 There is an inter dependency between these three attributes. When **security goes up, usability and functionality come down**. Any organization should balance between these three qualities to arrive at a balanced information system.
 
@@ -45,7 +45,7 @@ There is an inter dependency between these three attributes. When **security goe
 <img width="50%" src="https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/f14455ed4def635e1bc93b85657f43dbbf4a3127/triad2.png">
 </p>
 
-## <u>Types of Hackers</u>
+## Types of Hackers
 
 <p align="center">
 <img width="50%" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/types-hacker.JPG">
@@ -65,7 +65,7 @@ There is an inter dependency between these three attributes. When **security goe
 
 **Cyberterrorist** - Motivated by religious or political beliefs to create fear or disruption.
 
-## <u>Hacking Vocabulary</u>
+## Hacking Vocabulary
 
 - **Hack value** - Perceived value or worth of a target as seen by the attacker.
 - **Vulnerability** - A system flaw, weakness on the system (on design, implementation etc).
@@ -77,7 +77,7 @@ There is an inter dependency between these three attributes. When **security goe
 - **Doxxing** - Publishing PII about an individual usually with a malicious intent.
 - **Enterprise Information Security Architecture** (EISA) - determines the structure and behavior of organization's information systems through processes, requirements, principles and models.
 
-## <u> Threat Categories </u>
+##  Threat Categories 
 * **Network Threats**
   - Information gathering
   - Sniffing and eavesdropping
@@ -111,7 +111,7 @@ There is an inter dependency between these three attributes. When **security goe
   - Information disclosure
   - Security Misconfigurations
 
-## <u> Attack Vectors </u>
+##  Attack Vectors 
 *Path by which a hacker can gain access to a host in order to deliver a payload or malicious outcome*
 
 - **APT - Advanced Persistent Threats**
@@ -135,7 +135,7 @@ There is an inter dependency between these three attributes. When **security goe
 - **IoT Threats**
 
 
-## <u>Attack Types</u>
+## Attack Types
 ### 1. Operating System
 *Attacks targeting OS flaws or security issues inside such as guest accounts or default passwords.*
 >  - **Vectors**: Buffer overflows, Protocol Implementations, software defects, patch levels, authentication schemes
@@ -153,7 +153,7 @@ There is an inter dependency between these three attributes. When **security goe
 *Act of exploiting holes in unpatched or poorly-configured software.*
 >  - **Examples**: Software defect in version 1.0; DEfect in example CGI scripts; Default passwords 
 
-## <u>Vulnerabilities</u>
+## Vulnerabilities
 
 - **CVSS - Common Vulnerability Scoring System** [[+]](https://nvd.nist.gov/vuln-metrics/cvss)
   - Places numerical score based on severity
@@ -176,14 +176,14 @@ There is an inter dependency between these three attributes. When **security goe
 - **Default passwords** - leaving default passwords that come with system/application
 
 
-## <u>Pen Test Phases (CEH)</u>
+## Pen Test Phases (CEH)
 1. **Pre-Attack Phase** - Reconnaissance and data-gathering.
 2. **Attack Phase** - Attempts to penetrate the network and execute attacks.
 3. **Post-Attack Phase** - Cleanup to return a system to the pre-attack condition and deliver reports.
 
 > ⚠️ For the exam, EC-Council brings his own methodology and that's all you need for the exam; you can check another pentesting methodologies [here](https://owasp.org/www-project-web-security-testing-guide/latest/3-The_OWASP_Testing_Framework/1-Penetration_Testing_Methodologies) if you are interested; In case you are studying to become a professional pentester besides certification content, I recommend the [OSSTMM](https://www.isecom.org/research.html) (Open Source Security Testing Methodology Manual).
 
-## <u>The Five Stages of Ethical Hacking</u>
+## The Five Stages of Ethical Hacking
 
 ### 1. **Reconnaissance**
 *Gathering evidence about targets*; There are two types of Recon:
@@ -219,7 +219,7 @@ There is an inter dependency between these three attributes. When **security goe
 - **Attack**
   - That is most controversial. To “hack back,” a company accesses an alleged hacker’s computer to delete its data or even to take revenge. Both of these steps are considered illegal. 
 
-## <u> Information Assurance (IA) </u>
+##  Information Assurance (IA) 
 *Refers to the assurance of the Integrity, Availability, confidentiality, and authenticity of information and information systems during usage, processing, storage and transmission of information.*
 
 * **Processes that help achieving IA:**
@@ -232,7 +232,7 @@ There is an inter dependency between these three attributes. When **security goe
   - Performing C&A (Certification and Accreditation) process of information systems helps to trace vulnerabilities, and implement sa fety measures.
   - Providing information assurance training to all personnel in federal and private org.
 
-## <u>Information Security Management Program </u>
+## Information Security Management Program 
 *Combination of policies, processes, procedures, standards, and guidelines to establish the required **level of information security.***
 
 - Designed to ensure the business operates in a state of reduced risk.
@@ -244,7 +244,7 @@ There is an inter dependency between these three attributes. When **security goe
 > ⚠️ **IA** focus on risk assessment, mitigation side of things; 
 > ⚠️ **InfoSec** focus on actually implementing security measures to safeguard systems.
 
-## <u>EISA - Enterprise Information Security Architecture</u>
+## EISA - Enterprise Information Security Architecture
 *Set of requirements, process, principles, and models that determines the structure and behavior of an organization's information systems.*
 
 * **Goals of EISA**:
@@ -254,7 +254,7 @@ There is an inter dependency between these three attributes. When **security goe
   - Help to perform risk assessment of an organization's IT assets.
   - Cost prospective when incorporated in security provisions such as incident response, disaster recovery, event correlation, etc.
 
-## <u>Physical Security Controls</u> 
+## Physical Security Controls 
 
 - **Preventive control**: Deters the actor from performing the threat.
     - e.g: Fence, Server Locks, Mantraps, etc.
@@ -292,7 +292,7 @@ There is an inter dependency between these three attributes. When **security goe
 | **Detective**    | audits, backups             |
 | **Corrective**   | restore operations          |
 
-## <u>Managing the Risk</u>
+## Managing the Risk
 **Risk** can be defined as a probability of the occurrence of a threat or an event that may damage, or cause loss or have other negative impact either from internal or external liabilities.
 
 ### Risk matrix
@@ -337,7 +337,7 @@ Is a risk assessment approach for analyzing the security of an application by ca
 5. Identify Vulnerabilities
     - **Identify weaknesses** related to the threats found using vulnerability categories
 
-## <u>Security Policies</u>
+## Security Policies
 1. **Policies** - High-level statements about protecting information; Business rules to safeguard CIA triad; Security Policies can be applied on Users, Systems, Partners, Networks, and Providers.
     - **Common Security Policies examples:**
       - Password Policy
@@ -405,7 +405,7 @@ Is a risk assessment approach for analyzing the security of an application by ca
 8. Staff training
 9. Review and update regularly
 
-## <u>Incident Management Process</u>
+## Incident Management Process
 *An incident is an event that could lead to loss of, or disruption to, an organization's operations, services or functions.*
 
 ***Incident management** is a term describing the activities of an organization to identify, analyze, and correct hazards to prevent a future re-occurrence.*
@@ -462,7 +462,7 @@ Is a risk assessment approach for analyzing the security of an application by ca
 * **[ELK - Elastic Search, Log Stash and Kibana](https://www.elastic.co/what-is/elk-stack) (Open Source)**
 	![elk](https://i.imgur.com/lydtCwn.png)
 
-## <u>Identity and Access Management</u>
+## Identity and Access Management
 > **Identification, Authentication, Authorization**, and **Accounting** work together to manage assets securely.
 
 ### 1. **Identification**
@@ -587,7 +587,7 @@ All regulatory compliance such as COBIT, SSAE, SOCII, PCI-DSS, HIPPA, SOX, FINRA
 - Very expensive
 
 
-## <u>Penetration Test - Basics</u>
+## Penetration Test - Basics
 > **This topic will be covered with details in [Chapter 14 - Pentesting](https://github.com/Samsar4/CEH-v10-Study-Guide/blob/master/modules/14-Pentesting.md).**
 
 *A penetration test, colloquially known as a pen test, pentest or ethical hacking, is an authorized simulated cyberattack on a computer system, performed to evaluate the security of the system.*
@@ -604,7 +604,7 @@ All regulatory compliance such as COBIT, SSAE, SOCII, PCI-DSS, HIPPA, SOX, FINRA
   - **White Box** - When the attacker have complete knowledge of the system provided by the owner/target.
   - **Gray Box** - When the attacker has some knowledge of the system and/or network
 
-## <u>Law Categories</u>
+## Law Categories
 
 - **Criminal** - Laws that protect public safety and usually have jail time attached.
 - **Civil** - Private rights and remedies.
@@ -612,7 +612,7 @@ All regulatory compliance such as COBIT, SSAE, SOCII, PCI-DSS, HIPPA, SOX, FINRA
 
 ## Laws and Standards:
 
-### **OSSTM Compliance**
+### OSSTM Compliance
 **"Open Source Security Testing Methodology Manual"** maintained by ISECOM , defines three types of compliance.
 
 - **Legislative** - Deals with government regulations (Such as SOX and HIPAA).
@@ -634,48 +634,48 @@ All regulatory compliance such as COBIT, SSAE, SOCII, PCI-DSS, HIPPA, SOX, FINRA
     - *Integrity* - Ensures that only participants know when assets and processes change
     - *Alarm*  - Notifies participants when interactions occur
       
-### **PCI-DSS**
+### PCI-DSS
 **"Payment Card Industry Data Security Standard"** Standard for organizations handling Credit Cards, ATM cards and other POS cards.
 
-### **ISO 27001**
+### ISO 27001
 This International Standard has been prepared to provide requirements for establishing, implementing, maintaining and continually improving an information security management system.
 
-### **ISO 27002 AND 17799**
+### ISO 27002 AND 17799
 Based on BS799 but focuses on security objectives and provides security controls based on industry best practice.
 
-### **HIPAA**
+### HIPAA
 **"Health Insurance Portability and Accountability Act"** a law that set's privacy standards to protect patient medical records and health information shared between doctors, hospitals and insurance providers.
 
-### **SOX**
+### SOX
 **"Sarbanes-Oxley Act" Law** that requires publicly traded companies to submit to independent audits and to properly disclose financial information.
 
 ### DMCA
 **"The Digital Millennium Copyright Act"** is a 1998 United States copyright law that implements two 1996 treaties of the World Intellectual Property Organization. It criminalizes production and dissemination of technology, devices, or services intended to circumvent measures that control access to copyrighted works.
 
-### **FISMA** 
+### FISMA 
 **"Federal Information Security Modernization Ac Of 2002"** A law updated in 2004 to codify the authority of the Department of Homeland Security with regard to implementation of information security policies. *(For GOV. agencies)*
 
-### **NIST-800-53**
+### NIST-800-53
 Catalogs security and privacy controls for federal information systems, created to help implementation of FISMA.
   
-### **FITARA**
+### FITARA
 **"Federal Information Technology Acquisition Reform Act"** A 2013 bill that was intended to change the framework that determines how the US GOV purchases technology.
 
-### **COBIT**
+### COBIT
 **"Control Object for Information and Related Technology"** IT Governance framework and toolset, created by ISACA and ITGI
 
-### **GLBA**
+### GLBA
 **"U.S Gramm-Leach-Bliley Act"** Law that protects the confidentiality and integrity of personal information that is collected by financial institutions.
 
-### **CSIRT**
+### CSIRT
 **"Computer Security Incident Response Team"** CSIRT provided a single point of contact when reporting computer security incidents
 
-### **ITIL**
+### ITIL
 **"Information Technology Infrastructure Library"** - An operational framework developed in the '80s that standardizes IT management procedures 
 
-# <u>Essential Knowledge</u>
+# Essential Knowledge
 
-## <u> OSI Model and TCP Model</u>
+##  OSI Model and TCP Model
 - **The OSI Model** we just looked at is just a reference/logical model. It was designed to describe the functions of the communication system by dividing the communication procedure into smaller and simpler components. 
 
 - **The TCP/IP model** is a concise version of the OSI model. It contains four layers, unlike seven layers in the OSI model. 
@@ -690,7 +690,7 @@ Catalogs security and privacy controls for federal information systems, created 
 2 | Switch/bridge | **Data Link** | Link   | Data Link | Ethernet, Token Ring | Frames
 1 | Hubs/Repeater | **Physical**  | Link   | Physical | Ethernet, Token Ring | Bits
 
-### <u>TCP Handshake</u>
+### TCP Handshake
 
 <h4 align="center">The Three-way handshake</h4>
 <p align="center">
@@ -711,7 +711,7 @@ Catalogs security and privacy controls for federal information systems, created 
 
 ⚠️ *Sequence numbers increase on new communication.  Example is computers A and B.  A would increment B's sequence number.  A would never increment it's own sequence.*
 
-### <u>TCP Flags</u>
+### TCP Flags
 
 | Flag | Name           | Function                                                     |
 | ---- | -------------- | ------------------------------------------------------------ |
@@ -722,7 +722,7 @@ Catalogs security and privacy controls for federal information systems, created 
 | PSH  | Push           | Forces the delivery of data without concern for buffering    |
 | URG  | Urgent         | Data inside is being sent out of band.  Example is cancelling a message |
 
-### <u>Port Numbers</u>
+### Port Numbers
 
 - **Internet Assigned Numbers Authority** (IANA) - maintains Service Name and Transport Protocol Port Number Registry which lists all port number reservations
 
@@ -764,7 +764,7 @@ Catalogs security and privacy controls for federal information systems, created 
     - **netstat -an** displays connections in numerical form
     - **netstat -b** displays executables tied to the open port (admin only)
 
-### <u>Subnetting</u>
+### Subnetting
 
 - **IPv4 Main Address Types**
   - **Unicast** - acted on by a single recipient

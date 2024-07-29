@@ -24,7 +24,7 @@ nav_order: 3
 
 **Connection-Oriented Communication** - TCP packets require a connection due to the size of the data being transmitted and to ensure deliverability
 
-### <u>Scanning Methodology</u>
+### Scanning Methodology
 
 - **Check for live systems** - Ping or other type of way to determine live hosts
 - **Check for open ports** - Once you know live host IPs, scan them for listening ports
@@ -35,7 +35,7 @@ nav_order: 3
 - **Use proxies** - Obscures efforts to keep you hidden
 - **Pentest Report** - Document everything that you find
 
-## <u>Identifying Targets</u>
+## Identifying Targets
 
 - The easiest way to scan for live systems is through ICMP.
 
@@ -74,7 +74,7 @@ nav_order: 3
   | 11:  Time Exceeded          | Packet took too long to be routed (code 0 is TTL expired)    |
 
 
-## <u>Port Discovery - Basic Concepts</u>
+## Port Discovery - Basic Concepts
 
 ### Knocking the door:
 <img width="60%" src="https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/f8b2f839cee428a08506a9831a5d2f066e7301e7/openport.png">
@@ -125,25 +125,25 @@ nav_order: 3
 
 # Nmap Scan Types:
 
-### **Stealth Scan**
+### Stealth Scan
 Half-open scan or SYN scan - only SYN packets sent. Responses same as full.
   - Useful for hiding efforts and evading firewalls
   - **`nmap -sS <target IP>`**
 ---
-### **Full connect**
+### Full connect
 TCP connect or full open scan. The first two steps (SYN and SYN/ACK) are exactly the same as with a SYN scan. Then, instead of aborting the half-open connection with a RST packet, krad acknowledges the SYN/ACK with its own ACK packet, completing the connection. 
   - Full connection and then tears down with RST.
   - Easiest to detect, but most reliable
   - **`nmap -sT <target IP>`**
 ---
-### **TCP ACK scan / flag probe** - multiple methods
+### TCP ACK scan / flag probe - multiple methods
   - TTL version - if TTL of RST packet < 64, port is open
   - Window version - if the Window on the RST packet is anything other than 0, port open
   - **Can be used to check filtering.  If ACK is sent and no response, stateful firewall present.**
   - **`nmap -sA <target IP>`** *(ACK scan)*
   - **`nmap -sW <target IP>`** *(Window scan)*
 ---
-### **NULL, FIN and Xmas Scan**
+### NULL, FIN and Xmas Scan
 > ⚠️ **Uses FIN, URG or PSH flag.**
   - **Open gives no response. Closed gives RST/ACK**
   - **`nmap -sN <target IP>`** *(Null scan)*
@@ -155,7 +155,7 @@ TCP connect or full open scan. The first two steps (SYN and SYN/ACK) are exactly
   - **`nmap -sX <target IP>`**
  > ⚠️ **The key advantage to these scan types (NULL, FIN or Xmas scan) is that they can sneak through certain non-stateful firewalls and packet filtering routers.**
 ---
-### **IDLE Scan**
+### IDLE Scan
 uses a third party to check if a port is open
 - Looks at the IPID to see if there is a response
 - Only works if third party isn't transmitting data
@@ -165,7 +165,7 @@ uses a third party to check if a port is open
   - IPID increase of anything greater indicates the third party was not idle
 - **`nmap -sI <zombie host> <target IP>`**
 ---
-### **Spoofing**
+### Spoofing
   - **Decoy:**
     - **`nmap -Pn -D <spoofed IP> <target>`**
       - This will perform a spoofed ping scan.
@@ -178,7 +178,7 @@ uses a third party to check if a port is open
 
 > ⚠️ **Decoys will send spoofed IP address along with your IP address.**
 ---
-### **Firewall Evasion**
+### Firewall Evasion
 - **Multiple Decoy IP addresses:**
   - This command is used to scan multiple decoy IP addresses. **Nmap will send multiple packets with different IP addresses, along with your attacker's IP address.**
   - **`nmap -D RND:<number> <target>`**
@@ -224,7 +224,7 @@ Also you can fire up both TCP and UDP scan with port specification:
 ---
 
 
-## <u>List of Switches</u>
+## List of Switches
 
 | Switch          | Description                                                  |
 | :---------------: | :------------------------------------------------------------ |
@@ -297,7 +297,7 @@ One of the best things about NSE is its ability to let users write and share the
 
 - <small>Source: https://www.stationx.net/nmap-cheat-sheet/</small>
 
-## <u>hping</u>
+## hping
 > ⚡︎ **Check the hping3 [practical lab](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/1-hping3.md)**
 
 Hping3 is a scriptable program that uses the Tcl language, whereby packets can be received and sent via a binary or string representation describing the packets.
@@ -324,7 +324,7 @@ Hping3 is a scriptable program that uses the Tcl language, whereby packets can b
 | -U      | Sets the URG flag                                            |
 | -X      | Sets the XMAS scan flags                                     |
 
-## <u>Evasion Concepts</u>
+## Evasion Concepts
 
 - To evade IDS, sometimes you need to change the way you scan
 - One method is to fragment packets (nmap -f switch)
@@ -345,7 +345,7 @@ Hping3 is a scriptable program that uses the Tcl language, whereby packets can b
 - **Tor** - a specific type of proxy that uses multiple hops to a destination; endpoints are peer computers
 - **Anonymizers** - hides identity on HTTP traffic (port 80)
 
-## <u>Banner Grabbing</u>
+## Banner Grabbing
 *Banner grabbing can be used to get information about OS or specific server info (such as web server, mail server, etc.)*
 
 - **Active** - sending specially crafted packets and comparing responses to determine OS
@@ -400,9 +400,9 @@ Hping3 is a scriptable program that uses the Tcl language, whereby packets can b
       <li><a href="/twiki/">TWiki</a></li>
       ```
 
-## <u>Vulnerabilities</u>
+## Vulnerabilities
 
-### **Vulnerability Categories**:
+### Vulnerability Categories:
 
 - **Misconfiguration** - improperly configuring a service or application
 - **Default installation** - failure to change settings in an application that come by default
@@ -412,10 +412,10 @@ Hping3 is a scriptable program that uses the Tcl language, whereby packets can b
 - **Operating System Flaws** - flaws specific to each OS
 - **Default passwords** - leaving default passwords that come with system/application
 
-### **Vulnerability Assessment** - Scans and tests for vulnerabilities but does not intentionally exploit them.
+### Vulnerability Assessment - Scans and tests for vulnerabilities but does not intentionally exploit them.
   - Find the vulnerabilities so we can categorize them (OS, Misconfigurations, patch management, third-party, etc)
 
-### **Vulnerability Management Life-cycle**
+### Vulnerability Management Life-cycle
 *The Vulnerability Management Life Cycle is intended to allow organizations to **identify system security weaknesses; prioritize assets; assess, report, and remediate the weaknesses; and verify that they have been eliminated.***
 
 ![vuln-assess](https://www.parsolvo.com/wp-content/uploads/2020/02/Vulnerability-Management-Process-Lifecycle-Blue.png)
@@ -427,7 +427,7 @@ Hping3 is a scriptable program that uses the Tcl language, whereby packets can b
 5. **Remediate:** Prioritize and fix vulnerabilities in order according to business risk. Establish controls and demonstrate progress.
 6. **Verify:** Verify that threats have been eliminated through follow-up audits.
 
-### **Vulnerability Scanning**
+### Vulnerability Scanning
 *Can be complex or simple tools run against a target to determine vulnerabilities.*
 
 - **Types of Vuln. Assessment tools:**
@@ -448,7 +448,7 @@ Hping3 is a scriptable program that uses the Tcl language, whereby packets can b
   - **FreeScan** - Well known for testing websites and applications.
   - **Qualys**
 
-### **CVSS and CVE**
+### CVSS and CVE
 - **CVSS - Common Vulnerability Scoring System** [[+]](https://nvd.nist.gov/vuln-metrics/cvss)
   - Places numerical score based on severity
   - ![cvss](https://3.bp.blogspot.com/-5V1cb_wTvsk/Wl78iF4Sd8I/AAAAAAAAF7U/KmK4pMXi54YworDgh4uI8aZtHgy0bbznQCLcBGAs/s1600/CVSS.png)
@@ -464,7 +464,7 @@ Hping3 is a scriptable program that uses the Tcl language, whereby packets can b
 - **NVD - National Vulnerability Database**  [[+]](https://nvd.nist.gov/)
   -  is a database, maintained by NIST, that is fully synchronized with the MITRE CVE list; US Gov. vulnerabilities repository.
 
-## <u>ProxyChains ⛓</u>
+## ProxyChains ⛓
 ![proxychains](https://udigrudroid.files.wordpress.com/2018/11/proxy.jpg?w=620)
 
 *ProxyChains is open-source software that is available free and most of Linux distro it is pre-installed. If you are using the latest version of Kali Linux it is pre-installed in it.*
@@ -480,7 +480,7 @@ Hping3 is a scriptable program that uses the Tcl language, whereby packets can b
 - Proxychains is capable to do DNS resolving through proxy.
 - Proxychains can handle any TCP client application, ie., nmap, telnet.
 
-# <u>Enumeration Concepts</u>
+# Enumeration Concepts
 Enumeration is the process of extracting **user names, machine names, network resources, shares, and services** from a system, and its conducted in an intranet environment.
 
 - **Get user names using email IDs**
@@ -498,7 +498,7 @@ In this phase, the attacker creates an active connection to the system and perfo
 - **Direct access**
 - **Gain more information**
 
-## <u>SNMP Enumeration</u>
+## SNMP Enumeration
 > ⚡︎ **Check the SNMP Enumeration [practical lab](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/2-SNMP-Enumeration.md)**
 
 SNMP enumeration is the process of enumerating the users accounts and devices on a SNMP enabled computer.
@@ -553,7 +553,7 @@ Attackers enumerate SNMP to extract information about network resources such as 
     ![sns](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/292c0411bb379aaf25e403741f64e62bbe4bc6a0/snmp-snas.png)
 
 
-## <u>Windows System Basics</u>
+## Windows System Basics
 
 - Everything runs within context of an account
 - **Security Context** - user identity and authentication information
@@ -579,7 +579,7 @@ Attackers enumerate SNMP to extract information about network resources such as 
   - Lots of resources for enumerating, windows administration tools, etc.
 
 
-## <u>NetBIOS Enumeration</u>
+## NetBIOS Enumeration
 
 - NetBIOS provides name servicing, connectionless communication and some Session layer stuff
 - The browser service in Windows designed to host information about all machines within domain or TCP/IP network segment
@@ -620,7 +620,7 @@ Attackers enumerate SNMP to extract information about network resources such as 
   - **NetBIOS Enumerator (is a nbtstat with GUI)**
   - **NSAuditor**
 
-## <u>Linux System Basics</u>
+## Linux System Basics
 
 - **`Enum4linux` is a tool for enumerating information from Windows and Samba systems:**
   - `enum4linux -u CEH -p Pa55w0rd -U 10.0.2.23`
@@ -652,7 +652,7 @@ Attackers enumerate SNMP to extract information about network resources such as 
   ```
 > ⚠️ **Linux architecture and commands will be cover later on next module.**
 
-## <u>LDAP Enumeration</u>
+## LDAP Enumeration
 
 - **Runs on TCP ports 389 and 636 (over SSL)**
 - Connects on 389 to a Directory System Agent (DSA)
@@ -695,7 +695,7 @@ Network Distance: 1 hop
 - **JXplorer example**:
 <img width="80%" src="https://a.fsdn.com/con/app/proj/jxplorer/screenshots/16630.jpg/max/max/1">
 
-## <u>NTP Enumeration</u>
+## NTP Enumeration
 
 - **Runs on UDP 123**
 - Querying can give you list of systems connected to the server (name and IP)
@@ -740,7 +740,7 @@ PORT    STATE SERVICE REASON
 
 - As you can see on the output above, information of all clients that is using NTP services on the network shown IPv4 and IPv6 addresses.
 
-## <u>SMTP Enumeration</u>
+## SMTP Enumeration
 - **Ports used**:
   - **SMTP: TCP 25** --> [outbound email]
   - **IMAP: TCP 143 / 993**(over SSL) --> [inbound email]

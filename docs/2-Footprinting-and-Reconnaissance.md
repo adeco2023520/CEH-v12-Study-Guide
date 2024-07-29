@@ -10,7 +10,7 @@ nav_order: 3
 
 > ⚡︎ **This chapter have [practical labs](https://github.com/Samsar4/Ethical-Hacking-Labs/tree/master/1-Footprinting-and-Reconnaissance)**
 
-## <u>Footprinting</u>
+## Footprinting
 Footprinting is a part of reconnaissance process which is used for gathering possible information about a target computer system or network. 
 
 When used in the computer security lexicon, "Footprinting" generally refers to one of the pre-attack phases; tasks performed before doing the actual attack. **Some of the tools used for Footprinting are Sam Spade, nslookup, traceroute, Nmap and neotrace.**
@@ -84,7 +84,7 @@ Can be:
   - Users/Groups
   - Mobile Devices
 
-## <u>Methods and Tools</u>
+## Methods and Tools
 
 ### Search Engines
 
@@ -301,19 +301,19 @@ traceroute to nsa.gov (104.83.73.99), 30 hops max, 60 byte packets
 > ⚠️ **Windows command - `tracert`**
 > ⚠️ **Linux Command - `traceroute`**
 
-## <u>Other Relevant Tools</u>
+## Other Relevant Tools
 
-### **OSRFramework**
+### OSRFramework
 
 > ⚡︎ **OSRFramework has a [practical lab](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/4-OSRFramework.md)**
 
 
 Uses open source intelligence to get information about target. *(Username checking, DNS lookups, information leaks research, deep web search, regular expressions extraction, and many others)*.
 
-### **Web Spiders**
+### Web Spiders
 Obtain information from the website such as pages, etc.
 
-### **[Recon-ng](https://github.com/lanmaster53/recon-ng)**
+### [Recon-ng](https://github.com/lanmaster53/recon-ng)
 
 > ⚡︎ **Recon-ng has a [practical lab](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/3-Recon-ng.md)**
 
@@ -321,13 +321,13 @@ Recon-ng is a web-based open-source reconnaissance tool used to extract informat
 
 Provides a powerful environment in which open source web-based reconnaissance can be automated conducted, quickly and thoroughly.
 
-### **[Metasploit Framework](https://github.com/rapid7/metasploit-framework)**
+### [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
 
 > ⚡︎ **Metasploit has a [practical lab](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/5-Metasploit-Basics.md)**
 
 The Metasploit Framework is a tool that provides information about security vulnerabilities and aids in penetration testing and IDS signature development; **This is a huge framework that provide Recon tools as well.**
 
-### **[theHarvester](https://github.com/laramies/theHarvester)**
+### [theHarvester](https://github.com/laramies/theHarvester)
 
 > ⚡︎ **theHarvester has a [practical lab](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/6-theHarvester.md)**
 
@@ -399,7 +399,7 @@ x22www.hackthissite.org:
 module 'theHarvester.discovery.dnssearch' has no attribute 'DnsReverse'
 ```
 
-### **[Sublist3r](https://github.com/aboul3la/Sublist3r)**
+### [Sublist3r](https://github.com/aboul3la/Sublist3r)
 Sublist3r **enumerates subdomains** using many search engines such as Google, Yahoo, Bing, Baidu and Ask. Sublist3r also enumerates subdomains using Netcraft, Virustotal, ThreatCrowd, DNSdumpster and ReverseDNS
 
 **Usage example**:
@@ -501,9 +501,9 @@ It’s a open source Social Engineering Framework (SCRIPT) that helps generate p
 ![sef](https://hacknews247.com/wp-content/uploads/2018/10/20181002_212155_533793.png)
 
 
-## <u>Web Based Recon</u>
+## Web Based Recon
 
-### **[NetCraft](https://www.netcraft.com/)**
+### [NetCraft](https://www.netcraft.com/)
 Netcraft is a website analyzing server, with the help of this website we find basic and important information on the website like:
 
 - **Background** — This includes basic domain information.
@@ -527,7 +527,7 @@ Site Technology — This section includes details on:
 
 ![netcraft](https://i0.wp.com/hackingblogs.com/wp-content/uploads/2018/01/Capture-min-2.png)
 
-### **[Shodan](https://www.shodan.io/)**
+### [Shodan](https://www.shodan.io/)
 *Shodan Unlike traditional search engines such as Google, use Web crawlers to traverse your entire site, but directly into the channel behind the Internet, various types of port equipment audits, and never stops looking for the Internet and all associated **servers, camera, printers, routers, and so on**.*
 
 - Some have also described it as a search engine of service banners, which are metadata that the server sends back to the client.
@@ -546,7 +546,7 @@ Site Technology — This section includes details on:
 ![shodan](https://logz.io/wp-content/uploads/2019/05/Shodan.png)
 ![shodan2](https://securityonline.info/wp-content/uploads/2017/10/shodan-1-615x1024.png)
 
-### **[Censys](https://censys.io/overview/)**
+### [Censys](https://censys.io/overview/)
 *Alternative for Shodan.*
 
 ![censys](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/403be7a4514b6e0af36e0f568328372a5ce09cbf/censys.png)

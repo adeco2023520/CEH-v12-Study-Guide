@@ -27,7 +27,7 @@ DoS attacks can cause the following problems:
 **Goal:**
 - Seeks to take down a system or deny access to it by authorized users.
 
-### **Botnet**
+### Botnet
 *Network of zombie computers a hacker uses to start a distributed attack.*
   - Botnets can be designed to do malicious tasks including sending **spam, stealing data, ransomware, fraudulently clicking on ads or distributed denial-of-service (DDoS) attacks.**
   - Can be controlled over HTTP, HTTPS, IRC, or ICQ
@@ -43,9 +43,9 @@ DoS attacks can cause the following problems:
 
 
 
-## <u>Three Types of DoS / DDoS</u>
+## Three Types of DoS / DDoS
 
-### **1. Volumetric attacks**
+### 1. Volumetric attacks
 - Consumes the bandwidth of target network or service.
 - Send a massive amount of traffic to the target network with the goal of consuming **so much bandwidth** that users are denied access.
 - Bandwitdh depletion attack: Flood Attack and Amplification attack.
@@ -61,7 +61,7 @@ DoS attacks can cause the following problems:
 
   > - ⚠️ **Volumetric attacks is measured in Bits per second (Bps).**
 
-### **2. Protocol Attacks**
+### 2. Protocol Attacks
 - Consume other types of resources like **connection state tables** present in the network infrastructure components such as **load balancers, firewalls, and application servers**.
   - **Attacks**:
     - SYN flood attack
@@ -73,7 +73,7 @@ DoS attacks can cause the following problems:
 
   > - ⚠️ **Protocol attacks is measured in Packets per second (Pps).**
 
-### **3. Application Layer Attacks**
+### 3. Application Layer Attacks
 
 - Includes low-and-slow attacks, GET/POST floods, attacks that target Apache, Windows or OpenBSD vulnerabilities and more.
 - Consume the resources necessary for the application to run.
@@ -88,9 +88,9 @@ DoS attacks can cause the following problems:
   > - ⚠️ **Application level attacks are against weak code.**
 
 
-## <u>Attacks explanation</u>
+## Attacks explanation
 
-### **IP Fragmentation attacks**
+### IP Fragmentation attacks
 - IP / ICMP fragmentation attack is a common form of volumetric DoS. In such an attack, datagram fragmentation mechanisms are used to overwhelm the network.
 
 - Bombard the destination with fragmented packets, causing it to use memory to reassemble all those fragments and overwhelm a targeted network.
@@ -100,10 +100,10 @@ DoS attacks can cause the following problems:
   - **UDP and ICMP** fragmentation attack - only parts of the packets is sent to the target; Since the packets are fake and can't be reassembled, the server's resources are quickly consumed.
   - **TCP fragmentation attack** - also know as a Teardrop attack, targets TCP/IP reassembly mechanisms; Fragmented packets are prevented from being reassembled. The result is that data packets overlap and the targeted server becomes completely overwhelmed.
 
-### **TCP state-exhaustion attack**
+### TCP state-exhaustion attack
 - Attempt to consume connection state tables like: **Load balancers, firewalls and application servers.**
 
-### **Slowloris attack**
+### Slowloris attack
 *Is an application layer attack which operates by utilizing partial HTTP requests. The attack functions by opening connections to a targeted Web server and then keeping those connections open as long as it can.*
 
 -  ![slowloris](https://www.cloudflare.com/img/learning/ddos/ddos-slowloris-attack/slowloris-attack-diagram.png)
@@ -114,59 +114,59 @@ DoS attacks can cause the following problems:
 - The targeted server is never able to release any of the open partial connections while waiting for the termination of the request.
 - Once all available threads are in use, the server will be unable to respond to additional requests made from regular traffic, resulting in denial-of-service.
 
-### **SYN attack**
+### SYN attack
 - Sends thousands of SYN packets
 - Uses a **false source address** / spoofed IP address.
 - The server then responds to each one of the connection requests and leaves an open port ready to receive the response.
 - Eventually engages all resources and exhausts the machine
 
-### **SYN flood (half-open attack)**
+### SYN flood (half-open attack)
 - Sends thousands of SYN packets
 - While the **server waits for the final ACK packet**, **<u>which never arrives</u>**, the attacker continues to send more SYN packets. The arrival of each new SYN packet causes the server to temporarily maintain a new open port connection for a certain length of time, and once all the available ports have been utilized the server is unable to function normally.
 - Eventually bogs down the computer, runs out of resources.
 
 - ![syn-flood](https://www.cloudflare.com/img/learning/ddos/syn-flood-ddos-attack/syn-flood-attack-ddos-attack-diagram-2.png)
 
-### **ICMP flood**
+### ICMP flood
 - Sends ICMP Echo packets with a spoofed address; eventually reaches limit of packets per second sent
   - Is possible to use `hping3` to perform ICMP flood:
     - `hping -1 --flood --rand-source <target>`
 
-### **Smurf attack**
+### Smurf attack
 - The Smurf attack is a **distributed denial-of-service** attack in which large numbers of ICMP packets with the intended victim's **spoofed source IP are broadcast to a computer network using an IP broadcast address.**
   - Is possible to use `hping3` to perform this attack and bash script to loop through the subnet.
     - `hping3 -1 -c 1000 10.0.0.$i --fast -a <spoofed target>`
   - ![smurf](https://www.imperva.com/learn/wp-content/uploads/sites/13/2019/01/smurf-attack-ddos.png)
 
-### **Fraggle**
+### Fraggle
 - Same concept as Smurf attack but with **UDP packets** (UDP flood attack).
   - Is possible to use `hping3` to perform Fraggle attack/ UDP flood
     - `hping3 --flood --rand-source --udp -p <target>`
 
-### **Ping of Death**
+### Ping of Death
 - Fragments ICMP messages; after reassembled, the ICMP packet is larger than the maximum size and crashes the system
   -  Performs by sending an IP packet larger than the 65,536 bytes  allowed by the IP protocol.
   - Old technique that can be acceptable to old systems. 
 
-### **Teardrop**
+### Teardrop
 - Overlaps a large number of garbled IP fragments with oversized payloads; causes older systems to crash due to fragment reassembly
 
-### **Peer to peer**
+### Peer to peer
 - Clients of peer-to-peer file-sharing hub are disconnected and directed to connect to the target system
 
-### **Multi-vector attack**
+### Multi-vector attack
 - Is a combination of **Volumetric, protocol, and application-layer attacks**.
 
-### **Phlashing / Permanent DoS**
+### Phlashing / Permanent DoS
 - A DoS attack that causes permanent damage to a system.
 - Modifies the firmware and can also cause a **system to brick**.
 - *e.g: Send fraudulent hardware update to victim; crashing BIOS.*
 
-### **LAND attack**
+### LAND attack
 - Sends a SYN packet to the target with a spoofed IP the same as the target; if vulnerable, target loops endlessly and crashes
 
 
-## <u>DoS/DDoS Attack Tools:</u>
+## DoS/DDoS Attack Tools:
 - **Low Orbit Ion Cannon** (LOIC) - DDoS tool that floods a target with TCP, UDP or HTTP requests
   -  ![loic](https://i.ytimg.com/vi/HavEPVxUn-A/maxresdefault.jpg)
 
@@ -182,7 +182,7 @@ DoS attacks can cause the following problems:
   - Tribe Flood Network - uses voluntary botnet systems to launch massive flood attacks
   - RUDY (R-U-Dead-Yet?) - DoS with HTTP POST via long-form field submissions
 
-## <u>Mitigations</u>
+## Mitigations
 - Traffic analysis
 - Filtering
 - Firewalls

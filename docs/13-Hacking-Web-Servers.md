@@ -8,7 +8,7 @@ nav_order: 14
 - TOC
 {:toc}
 
-## <u>Web Server Attack Methodology</u>
+## Web Server Attack Methodology
 
 - **Information Gathering** - Internet searches, whois, reviewing robots.txt
 
@@ -49,7 +49,7 @@ nav_order: 14
 
 - **Web Server Password Cracking**
 
-## <u>Web Server Architecture</u>
+## Web Server Architecture
 
 - **Most Popular Servers** - Apache, Microsoft IIS and Nginx
   - Apache runs configurations as a part of a module within special files (http.conf, etc.)
@@ -74,7 +74,7 @@ nav_order: 14
   - **4xx: Client Error** - request contains bad syntax or cannot be fulfilled
   - **5xx: Server Error** - server failed to fulfill an apparently valid request
 
-## <u>Web Server Attacks</u>
+## Web Server Attacks
 
 - **DNS Amplification** - Uses recursive DNS to DoS a target; amplifies DNS answers to target until it can't do anything
 

@@ -16,7 +16,7 @@ nav_order: 21
 - **C.I.A. + Nonrepudiation**
   - **Nonrepudiation** - Means by which a recipient can ensure the identity of the sender and neither party can deny sending.
 
-## <u>Basic Terms & Concepts </u>
+## Basic Terms & Concepts 
 
 - **Cryptography** 
   - Science or study of protecting information whether in transit or at rest
@@ -35,7 +35,7 @@ nav_order: 21
 
 - **Key clustering** - Different encryption keys generate the same ciphertext from the same plaintext message
 
-## <u>Where to **Encrypt & Decrypt**?</u>
+## Where to **Encrypt & Decrypt**?
 * **Data-in-Transit** / **Data-in motion**: Transport / Network
 	- Not much protection as it travels
 		- Many different switches, routers, devices
@@ -55,7 +55,7 @@ nav_order: 21
 * **Data-in-use** / **Data-in-process**: RAM & CPU
 	- The data is in memory or CPU registers and cache
 	- The data is almost always decrypted
-## <u>Encryption Algorithms</u>
+## Encryption Algorithms
 
 - **Algorithm** - step-by-step method of solving a problem
 - **Two General Forms of Cryptography**
@@ -71,7 +71,7 @@ nav_order: 21
 - **XOR** - exclusive or; if inputs are the same (0,0 or 1,1), function returns 0; if inputs are not the same (0,1 or 1,0), function returns 1
 - Key chosen for cipher must have a length larger than the data; if not, it is vulnerable to frequency attacks
 
-## <u>Symmetric Encryption</u>
+## Symmetric Encryption
 
 - **Symmetric Encryption** - One Single Key / Session Key to encryption and decryption.
 > - **Known as:**
@@ -105,7 +105,7 @@ Defines key properties, communication requirements for the key exchange; actions
 
 - **Key escrow** (also known as a “fair” cryptosystem) is an arrangement in which the keys needed to decrypt encrypted data are held in escrow so that, under certain circumstances, an authorized third party may gain access to those keys.
 
-### **Symmetric Cryptosystems:**
+### Symmetric Cryptosystems:
 
 Algorithm | Block or Streaming | Block Size | Rounds | Key Size | Notes
 --|--|--|--|--|--
@@ -119,7 +119,7 @@ Algorithm | Block or Streaming | Block Size | Rounds | Key Size | Notes
 
 - Larger keys than symmetric encryption; Common to see key lengths of 3,072 bits or larger
 
-## <u>Asymmetric Encryption</u>
+## Asymmetric Encryption
 **Uses a Key pair:**
 > - **Public Key** - Anyone can see this key; give it away
 > - **Private Key** - Keep this private; used for decryption; The private key is used to digitally sign a message.
@@ -137,7 +137,7 @@ Algorithm | Block or Streaming | Block Size | Rounds | Key Size | Notes
 - Only downside is it's slower than symmetric especially on bulk encryption and processing power
 
 
-## <u>Hashes</u>
+## Hashes
 
 - **One-way encryption**
 - **Verify the Integrity of the message.**
@@ -167,7 +167,7 @@ SHA256 Hash: 7509E5BDA0C762D2BAC7F90D758B5B2263FA01CCBC542AB5E3DF163BE08E6CA9
 * String: **hello world.**
 	- ```MD5 Hash: 3C4292AE95BE58E0C58E4E5511F09647```
 
-### **Message digest**
+### Message digest
 A message digest or hash, can be used to verify the integrity of a message by comparing the original hash to one generated after receipt of the message. If the two match, then integrity is assured. If they do not match, then the message was altered between transmission and receipt.
 
 > ⚠️ **Message digests are also called:**
@@ -204,15 +204,15 @@ A message digest or hash, can be used to verify the integrity of a message by co
 - 160-bit digest
 - Weak; *2005: Collision attacks published*
 
-#### **SHA-2** Family
+#### SHA-2 Family
 - SHA-256 | minor version: SHA-224
 - SHA-512 | minor version: SHA-384
 
-#### **SHA-3** 
+#### SHA-3 
 - Uses a hash function called Keccack and has the same length of SHA-2. 
 - SHA-1 and SHA-2 have been replaced by the latest iteration of SHA known as SHA-3.
 
-### **HMAC**
+### HMAC
 Hash Message Authentication Code - Used in conjunction with symmetric key both to authenticate and verify integrity of the message.
 
 - Verify data **integrity** and **authenticity**
@@ -221,7 +221,7 @@ Hash Message Authentication Code - Used in conjunction with symmetric key both t
 	- IPsec, TLS
 - Requires each side of the conversation to have the same key
 
-### **RIPEMD**
+### RIPEMD
 RACE Integrity Primitives Evaluation Message Digest.
 - Not very common 
 - Open Standard
@@ -230,7 +230,7 @@ RACE Integrity Primitives Evaluation Message Digest.
 	- Effectively replaced with RIPEMD-160 (no known collision issues)
 	- Based upon MD4 design but performs similar to SHA-1
 
-## **Keystretching**
+## Keystretching
 Combine a very long salt and a huge number of hashing iterations to make cracking even more harder. (e.g Hashing the hashed password `N` times)
 
 **Two most popular Key stretching libraries/ functions:**
@@ -276,7 +276,7 @@ $2b$10$vES9mCPsE10//vOc1u01XeUVmJrZyHGMPaRfo39OIUoJ2g7iPtDnu
 	- Calculate your password hash using the nonce
 	- **Each password hash sent to the host will be different**, so a replay attack won't work
 
-## <u>Initialization vectors (IV)</u>
+## Initialization vectors (IV)
 - Is a type of nonce
 	- Used for randomizing an encryption scheme
 	- The more random the better
@@ -286,7 +286,7 @@ $2b$10$vES9mCPsE10//vOc1u01XeUVmJrZyHGMPaRfo39OIUoJ2g7iPtDnu
 <img src="https://defuse.ca/images/cbc_encryption.png" />
 </p>
 
-## <u>Digital Signatures</u>
+## Digital Signatures
 
 - When signing a message, you sign it with your **private** key and the recipient decrypts the hash with your **public** key
 - **Digital Signature Algorithm** (DSA) - used in generation and verification of digital signatures per FIPS 186-2
@@ -295,7 +295,7 @@ $2b$10$vES9mCPsE10//vOc1u01XeUVmJrZyHGMPaRfo39OIUoJ2g7iPtDnu
 > - Document that NIST puts out to specify the digital signature algorithms & the encryption algorithms approved for use by the US gov.
 
 
-## <u>PKI System</u>
+## PKI System
 ***Public Key Infrastructure** (PKI) - structure designed to verify and authenticate the identity of individuals*
 
 <p align="center">
@@ -308,7 +308,7 @@ $2b$10$vES9mCPsE10//vOc1u01XeUVmJrZyHGMPaRfo39OIUoJ2g7iPtDnu
   
 - **X.509 v3** is current format most widely used. Part of the X.500 family of standards
 
-### **Digital Certificates**
+### Digital Certificates
 
 - **Certificate** - electronic file that is used to verify a user's identity; provides nonrepudiation
 
@@ -356,7 +356,7 @@ $2b$10$vES9mCPsE10//vOc1u01XeUVmJrZyHGMPaRfo39OIUoJ2g7iPtDnu
 **Hierarchical trust system** 
   - CA at the top (root CA); makes use of one or more RAs (subordinate CAs) underneath it to issue and manage certificates
 
-## **Key Wrapping and Key Encryption Keys (KEK)**
+## Key Wrapping and Key Encryption Keys (KEK)
 - KEKs are used as part of key distribution or key exchange.
 - key Wrapping - Protect session keys 
 - If the cipher is a symmetric KEK, both the sender and the receiver will need a copy of the same key
@@ -364,14 +364,14 @@ $2b$10$vES9mCPsE10//vOc1u01XeUVmJrZyHGMPaRfo39OIUoJ2g7iPtDnu
 
 > ⚠️ **Protocols such as SSL, PGP, and S/MIME use the services of KEKs to provide session key confidentiality, integrity,** and sometimes to authenticate the binding of the session key originator and the session key itself.
 
-## <u>Full Disk Encryption - FDE</u>
+## Full Disk Encryption - FDE
 
 - **Data at Rest** (DAR) - data that is in a stored state and not currently accessible
   - Usually protected by **full disk encryption** (FDE) with pre-boot authentication
   - Example of FDE is Microsoft BitLocker and McAfee Endpoint Encryption
   - FDE also gives protection against boot-n-root
 
-## <u>Encrypted Communication</u>
+## Encrypted Communication
 
 - **Often-Used Encrypted Communication Methods:**
   - **Secure Shell** (SSH) - secured version of telnet; uses port 22; relies on public key cryptography; SSH2 is successor and includes SFTP
@@ -405,7 +405,7 @@ $2b$10$vES9mCPsE10//vOc1u01XeUVmJrZyHGMPaRfo39OIUoJ2g7iPtDnu
   - Uses flaws in SSL v2
   - Not only web servers; can be IMAP and POP servers as well
 
-## <u>Cryptography Attacks</u>
+## Cryptography Attacks
 *Cryptographic attacks approaches that seek to exploit one or more vulnerabilities in a cryptosystem to break it; **Note: Patterns Kill! and it's all about the key!***
 
 

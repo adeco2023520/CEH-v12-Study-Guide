@@ -12,7 +12,7 @@ nav_order: 9
 
 *Sniffing is the process of monitoring and capturing all the packets passing through a given network using sniffing tools. It is a form of “tapping phone wires” and get to know about the conversation. It is also called wiretapping applied to the computer networks.*
 
-## <u>Active and Passive Sniffing</u>
+## Active and Passive Sniffing
 
 - **Passive sniffing** - watching network traffic without interaction; only works for same collision domain
 - **Active sniffing** - uses methods to make a switch send traffic to you even though it isn't destined for your machine
@@ -23,7 +23,7 @@ nav_order: 9
   - ![net-tap](https://i1.wp.com/ipwithease.com/wp-content/uploads/2014/06/NETWORK-TAP.jpg?resize=768%2C429&ssl=1)
 - **Port mirroring** - another word for span port
 
-## <u>Basics</u>
+## Basics
 
  - Sniffing is capturing packets as they pass on the wire to review for interesting information
  - **MAC**  (Media Access Control) - physical or burned-in address - assigned to NIC for communications at the Data Link layer
@@ -39,7 +39,7 @@ nav_order: 9
     - Hubs by default have one collision domain
     - Switches have a collision domain for each port
 
-## <u>Protocols Susceptible</u>
+## Protocols Susceptible
 *Some of the protocols that are vulnerable to sniffing attacks.*
 
 - **IMAP**, **POP3**, **NNTP** and **HTTP** all  send over clear text data
@@ -57,7 +57,7 @@ nav_order: 9
 - **IP** shows source and destination addresses
 
 
-## <u>ARP</u>
+## ARP
 
 - Stands for Address Resolution Protocol
 - Resolves IP address to a MAC address
@@ -70,7 +70,7 @@ nav_order: 9
 - **Gratuitous ARP** - special packet to update ARP cache even without a request
   - This is used to poison cache on other machines
 
-## <u>IPv6</u>
+## IPv6
 
 - Uses 128-bit address
 - Has eight groups of four hexadecimal digits
@@ -93,7 +93,7 @@ nav_order: 9
 - Scope applies for multicast and anycast
 - Traditional network scanning is **computationally less feasible**
 
-## <u>Wiretapping</u>
+## Wiretapping
 *Wiretapping, also known as telephone tapping, is the process of monitoring telephone and Internet conversations by a third party, often by covert means.*
 
 - **Lawful interception** - Legally intercepting communications between two parties
@@ -102,7 +102,7 @@ nav_order: 9
 - **PRISM** - System used by NSA to wiretap external data coming into US
 
 
-## <u>MAC Flooding</u>
+## MAC Flooding
 
 - Switches either flood or forward data
 - If a switch doesn't know what MAC address is on a port, it will flood the data until it finds out
@@ -121,7 +121,7 @@ nav_order: 9
   - Macof
   - Dsniff 
 
-## <u>Switch port stealing</u>
+## Switch port stealing
 Tries to update information regarding a specific port in a race condition
 1. ARP Flood
     - Source MAC address same a victim
@@ -133,7 +133,7 @@ Tries to update information regarding a specific port in a race condition
 5. Attacker retransmits captured data
 6. Attacker repeats flooding
 
-## <u>ARP Poisoning</u>
+## ARP Poisoning
 ![arp](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ARP_Spoofing.svg/1200px-ARP_Spoofing.svg.png)
 ***ARP spoofing** is a type of attack in which a malicious actor sends falsified ARP (Address Resolution Protocol) messages over a local area network. This results in the linking of an attacker's MAC address with the IP address of a legitimate computer or server on the network.*
 
@@ -152,7 +152,7 @@ Tries to update information regarding a specific port in a race condition
   - Ufasoft
   - dsniff
 
-## <u>DHCP Starvation</u>
+## DHCP Starvation
 *Is an attack that targets DHCP servers whereby forged DHCP requests are crafted by an attacker with the intent of exhausting all available IP addresses that can be allocated by the DHCP server.*
 
 - Attempt to exhaust all available addresses from the server
@@ -170,7 +170,7 @@ Tries to update information regarding a specific port in a race condition
 - Mitigation is to configure DHCP snooping
 - **Rogue DHCP Server** - setup to offer addresses instead of real server.  Can be combined with starvation to real server.
 
-## <u>Spoofing</u>
+## Spoofing
 
 - **MAC Spoofing** - Changes your MAC address.  Benefit is CAM table uses most recent address.
   - Port security can slow this down, but doesn't always stop it.
@@ -180,9 +180,9 @@ Tries to update information regarding a specific port in a race condition
 
 - **DNS Poisoning** - Changes where machines get their DNS info from, allowing attacker to redirect to malicious websites.
 
-## <u>Sniffing Tools</u>
+## Sniffing Tools
 
-### **Wireshark**
+### Wireshark
 *Wireshark is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level.*
 - With Wirehsark you can inspect and detect ARP poisonings, Rogue DHCP servers, Broadcast Storm etc.
 
@@ -210,7 +210,7 @@ Tries to update information regarding a specific port in a race condition
   - **`tcp.flags==0x16`**
       - Filters TCP requests with ACK flag set
 
-### **tcpdump**
+### tcpdump
 *Tcpdump is a data-network packet analyzer computer program that runs under a command line interface. It allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached.*
 - ![tcpdump](https://camo.githubusercontent.com/33a479b12001431323304fb8a5f75ea65444357f/68747470733a2f2f7061636b6574666c6f77732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031372f30352f74637064756d705f692e706e67)
 - **Syntax**
@@ -219,10 +219,10 @@ Tries to update information regarding a specific port in a race condition
       - Puts the interface in listening mode
 - WinDump is a Windows version similar to tcpdump.
 
-### **tcptrace**
+### tcptrace
 - Analyzes files produced by packet capture programs such as Wireshark, tcpdump and Etherpeek
 
-### **Other Tools**
+### Other Tools
 - **Ettercap** - also can be used for MITM attacks, ARP poisoning.  Has active and passive sniffing.
 - **Capsa Network Analyzer**
 - **Snort** - usually discussed as an Intrusion Detection application
@@ -231,7 +231,7 @@ Tries to update information regarding a specific port in a race condition
 - **WinDump**
 - **WinSniffer**
 
-## **Defending and Countermeasures techniques against Sniffing**:
+## Defending and Countermeasures techniques against Sniffing:
   - Disable ARP Dynamic
   - ARP Spoofing detection tools
   - Encrypt all the traffic that leaves your system

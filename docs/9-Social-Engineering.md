@@ -38,14 +38,14 @@ nav_order: 10
 7. **Trust**
 	* To assure reliance on their honesty and integrity
 
-## **Behaviors**
+## Behaviors
   - **Human nature/Trust** - trusting others
   - **Ignorance** of social engineering efforts
   - **Fear** of consequences of not providing the information
   - **Greed** - promised gain for providing requested information
   - A sense of **moral obligation**
 
-## **Companies Common Risks:**
+## Companies Common Risks:
 - **Insufficient training**
 - **Lack of controls**
     - Technical
@@ -61,7 +61,7 @@ nav_order: 10
     - Prudent Policy
     - Paranoid Policy
 
-## <u>Social Engineering Attacks:</u>
+## Social Engineering Attacks:
 
 ## Human-Based Attacks 👥
 
@@ -114,7 +114,7 @@ nav_order: 10
 
 - **Fake Antivirus** - Very prevalent attack; pretends to be an anti-virus but is a malicious tool.
 
-### **Tools**
+### Tools
 - **SET (Social Engineering Toolkit)** - Pentest tool design to perform advanced attacks against human by exploiting their behavior.
 
 - **PhishTank** -  For phishing detection
@@ -123,7 +123,7 @@ nav_order: 10
 
 - **SPF SpeedPhish framework** - Quick recon and deployment of simple social eng. exercises
 
-## <u>Mobile-Based Attacks</u>
+## Mobile-Based Attacks
 
 - **ZitMo** (ZeuS-in-the-Mobile) - banking malware that was ported to Android
 - SMS messages can be sent to request premium services
@@ -133,7 +133,7 @@ nav_order: 10
   - Fake security applications
   - SMS (**smishing**)
 
-## <u>Physical Security Basics</u>
+## Physical Security Basics
 
 - **Physical measures** - everything you can touch, taste, smell or get shocked by
   - Includes things like air quality, power concerns, humidity-control systems

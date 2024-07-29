@@ -8,13 +8,13 @@ nav_order: 15
 - TOC
 {:toc}
 
-## <u>Web Organizations</u>
+## Web Organizations
 
 - **Internet Engineering Task Force (IETF)** - Creates engineering documents to help make the Internet work better.
 - **World Wide Web Consortium (W3C)** - A standards-developing community.
 - **Open Web Application Security Project (OWASP)** - Organization focused on improving the security of software.
 
-## <u>OWASP Web Top 10</u>
+## OWASP Web Top 10
 
 <p align="center">
 <img width="60%" src="https://sdtimes.com/wp-content/uploads/2017/11/OWASP.png" />
@@ -36,7 +36,7 @@ nav_order: 15
 **WebGoat** - project maintained by OWASP which is an insecure web application meant to be tested
 
 
-## <u>Web Application Attacks</u>
+## Web Application Attacks
 
 - Most often hacked before of inherent weaknesses built into the program
 - First step is to identify entry points (POST data, URL parameters, cookies, headers, etc.)
@@ -47,7 +47,7 @@ nav_order: 15
 - **Web 2.0** - dynamic applications; have a larger attack surface due to simultaneous communication
 
 ---
-## **SQL Injection**
+## SQL Injection
 
 Injecting SQL commands into input fields to produce output
   - Data Handling - Definition (DDL), manipulation (DML) and control (DCL)
@@ -141,7 +141,7 @@ SQL Command | Info.
 
 ---
 
-### **Broken Authentication**
+### Broken Authentication
 Broken Authentication usually occurs due to the issues with the application’s authentication mechanism;
 
 - **Credential Stuffing and Brute Force Attacks**
@@ -152,7 +152,7 @@ Broken Authentication usually occurs due to the issues with the application’s 
 
 ---
 
-### **Command Injection**
+### Command Injection
 Execution of arbitrary commands on the host operating system via a vulnerable application.
 - Injection are possible when an application passes unsafe user supplied data (forms, cookies, HTTP headers etc.) to a system shell. 
 - Web apps sometimes need to execute OS commands to communicate with the underlying host OS and the file system. This can be done to run system commands, launch applications written in another programming language, or run shell, python, perl, or PHP scripts.
@@ -179,7 +179,7 @@ uid=0(root) gid=0(root) groups=0(root)
 
 ---
 
-### **Sensitive Data Exposure**
+### Sensitive Data Exposure
 
 When the web application doesn’t adequately protect sensitive information like **session tokens, passwords, banking information, location, health data**, or any other similar crucial data whose leak can be critical for the user.
 
@@ -192,7 +192,7 @@ When the web application doesn’t adequately protect sensitive information like
 
 ---
 
-### **XEE - XML External  Entities**
+### XEE - XML External  Entities
 Is a type of attack against an application that parses XML input. This attack occurs when **XML input containing a reference to an external entity is processed by a weakly configured XML parser.**
 
 - Attackers can supply XML files with specially crafted DOCTYPE definitions to an XML parser with a weak security configuration to perform **path traversal, port scanning, and numerous attacks, including denial of service, server-side request forgery (SSRF), or even remote code execution.**
@@ -212,7 +212,7 @@ Is a type of attack against an application that parses XML input. This attack oc
 
 ___
 
-### **RFI - Remote File Inclusion**
+### RFI - Remote File Inclusion
 
 Is a method that allows an attacker to employ a script to include a remotely hosted file on the webserver. The vulnerability promoting RFI is largely found on websites running on PHP. This is because PHP supports the ability to `‘include’` or `‘require’` additional files within a script;
 
@@ -228,7 +228,7 @@ Is a method that allows an attacker to employ a script to include a remotely hos
 ---
 
 
-### **LFI - Local File Inclusion**: 
+### LFI - Local File Inclusion: 
 is very much similar to RFI. The only difference being that in LFI, in order to carry out the attack instead of including remote files, the attacker has to use local files (e.g: files on the current server can only be used to execute a malicious script).
 
 **Examples**:
@@ -236,7 +236,7 @@ is very much similar to RFI. The only difference being that in LFI, in order to 
 
 ---
 
-### **Directory Traversal**
+### Directory Traversal
 An attacker can get sensitive information like the contents of the /etc/passwd file that contains a list of users on the server; Log files, source code, access.log and so on
 
 **Examples:**
@@ -246,7 +246,7 @@ An attacker can get sensitive information like the contents of the /etc/passwd f
 *Similarly, an attacker may leverage the Directory Traversal vulnerability to access **log files** (for example, **Apache access.log or error.log**), **source code**, and other sensitive information. This information may then be used to advance an attack.*
 
 ---
-### **XSS (Cross-site scripting)**
+### XSS (Cross-site scripting)
 Inputting JavaScript into a web form input field that alters what the page does.
   - Can also be passed via URL
   - Can be malicious by accessing cookies and sending them to a remote host
@@ -269,28 +269,28 @@ Examples of XSS payloads:
 *Note: they vary regarding the filtering, validation and WAF capabilities.*
 
 ---
-### **HTML Injection**
+### HTML Injection
 This vulnerability **occurs when user input is not correctly sanitized and the output is not encoded.** An injection allows the attacker to send a malicious HTML page to a victim. 
 
 ---
-### **LDAP Injection**
+### LDAP Injection
 Exploits applications that construct LDAP statements
   - Format for LDAP injection includes )(&)
 ---
 
-### **SOAP Injection**
+### SOAP Injection
 Inject query strings in order to bypass authentication
   - SOAP uses XML to format information
   - Messages are "one way" in nature
 ---
-### **Buffer Overflow** 
+### Buffer Overflow 
 Attempts to write data into application's buffer area to overwrite adjacent memory, execute code or crash a system
   - Inputs more data than the buffer is allowed
   - Includes stack, heap, NOP sleds and more
   - **Canaries** - systems can monitor these - if they are changed, they indicate a buffer overflow has occurred; placed between buffer and control data
 ---
 
-### **Cross-Site Request Forgery (CSRF)**
+### Cross-Site Request Forgery (CSRF)
 Forces an end user to execute unwanted actions on an app they're already authenticated on
   - Inherits  identity and privileges of victim to perform an undesired function on victim's behalf
   - Captures the session and sends a request based off the logged in user's credentials
@@ -298,7 +298,7 @@ Forces an end user to execute unwanted actions on an app they're already authent
 
 ---
 
-### **Session Fixation**
+### Session Fixation
 Attacker logs into a legitimate site and pulls a session ID; sends link with session ID to victim.  Once victim logs in, attacker can now log in and run with user's credentials
 
 - **Cookies** - small text-based files stored that contains information like preferences, session details or shopping cart contents
@@ -306,7 +306,7 @@ Attacker logs into a legitimate site and pulls a session ID; sends link with ses
   - Sometimes, but rarely, can also contain passwords
 
 ---
-### **HTTP Response Splitting**
+### HTTP Response Splitting
 Adds header response data to an input field so server splits the response
   - Can be used to redirect a user to a malicious site
   - Is not an attack in and of itself - must be combined with another attack
@@ -317,7 +317,7 @@ Adds header response data to an input field so server splits the response
     - Hijacking pages with user-specific information
 ---
 
-### **Insecure direct object references (IDOR)**
+### Insecure direct object references (IDOR)
 Is a common vulnerability that occurs when a reference to an <u>**internal implementation object is exposed without any other access control**</u>. The vulnerability is often easy to discover and allows attackers to access unauthorized data.
 
 <p align="center">

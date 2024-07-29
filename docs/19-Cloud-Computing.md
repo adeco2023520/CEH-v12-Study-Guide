@@ -8,7 +8,7 @@ nav_order: 20
 - TOC
 {:toc}
 
-## <u>Cloud Computing Basics</u>
+## Cloud Computing Basics
 
 - **Three Types of Service Models**:
   - **Infrastructure as a Service (IaaS)**
@@ -41,14 +41,14 @@ Storage/Networking | managed by provider
 <img width="90%" src="https://img.alicdn.com/tfs/TB1WyglO7voK1RjSZFwXXciCFXa-2305-1450.png" />
 </p>
 
-## <u>Cloud Deployment Models</u>
+## Cloud Deployment Models
 
 - **Private Cloud** - Cloud solely for use by one tenant; usually done in larger organizations.
 - **Community Cloud** - Is make up of infrastructure from several different entitites wich may be cloud providers, business partners, and so on. (members only type of thing)
 - **Public Cloud** - Services provided over a network that is open for public to use; Amazon S3, Microsoft Azure - Open for business.
 - **Hybrid Cloud** - A composition of two or more cloud deployment models.
 
-## <u>**NIST Cloud Architecture**</u>
+## NIST Cloud Architecture
 *The NIST cloud computing reference architecture (NIST SP 500-292) define five major actors; Each actor is an entity (a person or an organization) that participates in a transaction or process and/or perform tasks in cloud computing.*
 
 - **Cloud Consumer** - A person or org. that maintains a business relationship with, and use servies from Cloud Providers; aquires and uses cloud products and services.
@@ -62,7 +62,7 @@ Storage/Networking | managed by provider
 > ⚠️ - **PCI DSS** - deals with debit and credit cards, but also has a cloud SIG
 
 
-## <u>Five characteristics of cloud computing</u>
+## Five characteristics of cloud computing
 
 ***The National Institute of Standards and Technology (NIST)** defines cloud computing as it is known today through five particular characteristics.*
 
@@ -77,7 +77,7 @@ Storage/Networking | managed by provider
 5. **Measured service**
 
 
-## <u>Threats:</u>
+## Threats:
 
 - **Data Breach or Loss** - Biggest threat; includes malicious theft, erasure or modification
 
@@ -112,7 +112,7 @@ Storage/Networking | managed by provider
       - Improper/incomplete data handling & disposal
       - Management network failure/interface compromise
 
-## <u> Attacks:</u>
+##  Attacks:
 1. Service hijacking via Social engineering & network sniffing
 2. Session hijacking using XSS
 3. DNS attacks
@@ -124,7 +124,7 @@ Storage/Networking | managed by provider
 9. DoS/DDoS attack
 10. Main-in-the-Cloud attacks - abuse of cloud file synchronization services br tracking the user into installing malicious software that places the attacker's synchronization token for the service ton their machine, allowing the attacker to steal the user's token and gain access to their files.
 
-## <u> OWASP Top 10 Application Security Risks  </u>
+##  OWASP Top 10 Application Security Risks  
 
 1. **Injection** - Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.
     - Input validation
@@ -154,14 +154,14 @@ Storage/Networking | managed by provider
 
 10. **Insufficient Logging & Monitoring** - Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems, and tamper, extract, or destroy data. Most breach studies show time to detect a breach is over 200 days, typically detected by external parties rather than internal processes or monitoring.
 
-## <u>Additional Attacks</u>
+## Additional Attacks
 1. **Directory Traversal** (../) - An attacker can get sensitive information like the contents of the /etc/passwd file that contains a list of users on the server; Log files, source code, access.log and so on
 2. **Cross-site Request Forgery (CSRF)** - Forces an end user to execute unwanted actions on an app they're already authenticated on
     - Inherits  identity and privileges of victim to perform an undesired function on victim's behalf
     - Captures the session and sends a request based off the logged in user's credentials
     - Can be mitigated by sending **random challenge tokens**
 
-## <u> Cloud Security Control Layers </u>
+##  Cloud Security Control Layers 
 
 *Problem with cloud security is what you are allowed to test and what should you test; Another concern is with a hypervisor, if the hypervisor is compromised, all hosts on that hypervisor are as well.*
 

@@ -26,20 +26,20 @@ nav_order: 12
   <small>Session Hijacking using XSS</small>
 </p>
 
-## **The session token could be compromised in different ways; the most common are:**
+## The session token could be compromised in different ways; the most common are:
 
-### **Predictable session token**
+### Predictable session token
 - The session ID information for a certain application is normally composed by a string of fixed width. **Randomness is very important** to avoid its prediction.
   - **Example:** Session ID  value is “user01”, which corresponds to the username. By trying new values for it, like “user02”, it could be possible to get inside the application without prior authentication.
 
-### **Session Sniffing** 
+### Session Sniffing 
 - Sniffing can be used to hijack a session when there is non-encrypted communication between the web server and the user, and the session ID is being sent in plain text. 
   - **Wireshark** and **Kismet** can be used to capture sensitive data packets such as the session ID from the network.
 
-### **Cross-site scripting (XSS)**
+### Cross-site scripting (XSS)
 - A server can be vulnerable to a cross-site scripting exploit, which enables an attacker to execute malicious code from the user’s side, gathering session information. An attacker can target a victim’s browser and send a scripted JavaScript link, which upon opening by the user, runs the malicious code in the browser hijacking sessions.
 
-### **CSRF - Cross-Site Request Forgery**
+### CSRF - Cross-Site Request Forgery
 - Forces an end user to execute unwanted actions on a web application in which they’re currently authenticated. With a little help of social engineering (such as sending a link via email or chat), an attacker may trick the users of a web application into executing actions of the attacker’s choosing; 
 - CSRF attack can force the user to perform state changing requests like transferring funds, changing their email address, and so forth. If the victim is an administrative account, CSRF can compromise the entire web application.
 
@@ -53,7 +53,7 @@ nav_order: 12
   7. Bank transfers money to attacker's account.
   8. The form can be in an iframe that is invisible, so you never know the attack occurred.
 
-### **Session Fixation**
+### Session Fixation
 - Session Fixation is an attack that permits an attacker to hijack a valid user session. The attack explores a limitation in the way the web application manages the session ID, more specifically the vulnerable web application.
 
 - **Session fixation Scenario**:
@@ -62,10 +62,10 @@ nav_order: 12
   3. The victim accesses the web application login page and logs in to the application. After authenticating, the **web application treats anyone who uses this session ID as if they were this user.**
   4. The attacker uses the session ID to access the web application, **take over the user session, and impersonate the victim**. 
 
-### **Man-in-the-browser attack**
+### Man-in-the-browser attack
 - The Man-in-the-Browser attack is the same approach as Man-in-the-middle attack, but in this case a Trojan Horse is used to intercept and manipulate calls between the main application’s executable.
 
-### **Man-in-the-middle attack**
+### Man-in-the-middle attack
 - MITM attack is a general term for when a perpetrator positions himself in a conversation between a user and an application—either to eavesdrop or to impersonate one of the parties, making it appear as if a normal exchange of information is underway.
 
 
@@ -80,11 +80,11 @@ nav_order: 12
 - **Forbideen Attack** 
 Vulnerability in TLS that incorrectly reuse the **same cryptographic nonce when data is encrypted**. TLS specifications are clear that these arbitrary pieces of data should be used only once. When the same one is used more than once, it provides an opportunity to carry out the forbidden attack.
 
-## <u>Network Layer Attacks</u>
+## Network Layer Attacks
 - **TCP Hijacking**: TCP/IP Hijacking is when an authorized user gains access to a genuine network connection of another user. It is done in order to bypass the password authentication which is normally the start of a session.
   - e.g: TELNET Hijacking using Ettercap, Shijack, making a blind hijacking.
 
-### **Tools**
+### Tools
 - **Ettercap** - MiTM tool and packet sniffer on steroids
 - **Hunt** - sniff, hijack and reset connections
 - **T-Sight** - easily hijack sessions and monitor network connections

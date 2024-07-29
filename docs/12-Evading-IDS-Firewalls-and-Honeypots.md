@@ -8,7 +8,7 @@ nav_order: 13
 - TOC
 {:toc}
 
-## <u>IDS/IPS - Basic Concepts</u>
+## IDS/IPS - Basic Concepts
 
 **Intrusion Prevention System (IPS)** - ACTIVE monitoring of activity looking for anomalies and alerting/notifiying AND **taking action when they are found**.
 
@@ -18,18 +18,18 @@ nav_order: 13
 <img width="75%" src="https://3th2q02cq5up44zpe81rwase-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/Intrusion-Detection-IDS-VS-Intrusion-Prevention-IPS-What%E2%80%99s-The-Difference.png" />
 </p>
 
-### **Deployment Types - HIDS & NIDS & WIDS:**
+### Deployment Types - HIDS & NIDS & WIDS:
 1. **Host based** - Monitors activity on a single device/host by being installed lcoally.
 
 2. **Network based** - Monitors activity across a network using remote sensors that reprot back to a central system. Often paired with a security Information & SIEM system for analysis. Often Reverse ARP or Reverse DNS lookups are used to discover the source
 
-### **Knowledge & Behavior-Based Detection:**
+### Knowledge & Behavior-Based Detection:
 1. **Knowledge Based (Signature Based | Pattern Matching)** - Most common form of detection. Uses a database of profiles, or signatures to assess all traffic against.
 
 2. **Behavior Based (Statistical | Anomaly | Heuristic)** - Starts by creating a baseline of behavior for the monitored system/network and then comapres all traffic against that looking for deviations. Can be labeled an AI or Expert system.
 
 ---
-### **Types of IDS Alerts**
+### Types of IDS Alerts
 - **True Positive** --> Attack - Alert ✅✅
 - **False Positive** --> No Attack - Alert ❌✅
 - **False Negative** --> Attack - No Alert ✅❌
@@ -38,16 +38,16 @@ nav_order: 13
 
 ---
 
-## <u>Firewalls - Basic Concepts</u>
+## Firewalls - Basic Concepts
 *Firewalls are often seen as NAC devices. Use of rule sets to filter traffic can implement security policy.*
 
-### **Firewalls types:**
+### Firewalls types:
 - **Stateful (Dynamic Packet Filtering)** - Layer 3 + 4 (Network + Transport layer)
 - **Stateless (Static Packet Filtering)** - Layer 3 (Network)
 - **Deep Packet Inspection** - Layer 7 (Application Layer)
 - **Proxy Firewall** - Mediates communications between unstrusted and trusted end-points (server/hosts/clients). A proxy firewall is a network security system that protects network resources by filtering messages at the Application Layer 7. A proxy firewall may also be called an application firewall or gateway firewall.
 
-### **Proxy Types:**
+### Proxy Types:
 - **Circuit-level proxy** - Firewall that works on **Layer 5 (Session layer)**; They monitor TCP handshaking between packets to determine whether a requested session is legitimate.
 - **Application-level proxy** - Any service or server that acts as a proxy for client computer requests at the application’s protocols.
 
@@ -69,14 +69,14 @@ nav_order: 13
 > ⚠️ **Private zone** - hosts internal hosts that only respond to requests from within that zone
 
 
-## <u>Honeypots</u> 🍯
+## Honeypots 🍯
 *Honeypots are decoy systems or servers deployed alongside production systems within your network. When deployed as enticing targets for attackers, honeypots can add security monitoring opportunities for blue teams and misdirect the adversary from their true target.*
 
 - **Honeynet** - Two or more honeypots on a network form a honeynet. Honeynets and honeypots are usually implemented as parts of larger Network Intrusion Detection Systems.
 
 - A **Honeyfarm** is a centralized collection of honeypots and analysis tools.
 
-### **Types of Honeypots:**
+### Types of Honeypots:
 1. **Low-interaction** ---> Simulates/imitate services and systems that frequently attract criminal attention. They offer a method for collecting data from blind attacks such as botnets and worms malware. 
 2. **High interaction** ---> Simulates all services and applications and is designed to be completely compromised
 3. **Production** ---> Serve as decoy systems inside fully operating networks and servers, often as part of an intrusion detection system (IDS). They deflect criminal attention from the real system while analyzing malicious activity to help mitigate vulnerabilities.
@@ -87,9 +87,9 @@ nav_order: 13
   - Honeyd
   - KFSensor (Honeypot IDS)
 
-## <u>Evading with Nmap</u>
+## Evading with Nmap
 
-### **Useful switches for Evading and Stealthy**:
+### Useful switches for Evading and Stealthy:
 
 Nmap Switch | Information
 --|--
@@ -105,7 +105,7 @@ Nmap Switch | Information
 `--source-port` | Specify a randomized port that you want to comunicate
 
 ---
-### **Example:**
+### Example:
 
 • Sends IPv4 fragmented 50-byte packet size; The packets are too small to send data and to detect as a Probe/Scanning technique:
 
@@ -114,7 +114,7 @@ Nmap Switch | Information
 > ⚠️ **Fragmentation is the heart of the IDS/Firewall Evasion techniques.**
 ---
 
-## <u>Using SNORT</u>
+## Using SNORT
 *SNORT is an open source network intrusion detection system (NIDS). Snort is a packet sniffer that monitors network traffic in real time, scrutinizing each packet closely to detect a dangerous payload or suspicious anomalies.*
 
 - Snort is a widely deployed IDS that is open source
@@ -125,7 +125,7 @@ Nmap Switch | Information
   - **NIDS** - Analyzes network traffic against various rule sets
 - Configuration is in `/etc/snort` on Linux and `C:\snort\etc` in Windows; the file is **snort.conf**.
 
-### **SNORT basics commands:**
+### SNORT basics commands:
 
 **Operational modes:**
 - Snort as **Sniffer** ---> `snort -v`
@@ -159,7 +159,7 @@ Flag | Information
 `-K` | Logging mode (pcap[default], ascii, none)
 `-?` | Lists all switches and options and then exits
 
-### **SNORT Rules**
+### SNORT Rules
 *SNORT has a rules engine that allows for customization of monitoring and detection capabilities.*
 
 - **There are three available rule actions**
@@ -171,7 +171,7 @@ Flag | Information
   2. UDP
   3. ICMP
 
-### **Breaking down a Snort rule:**
+### Breaking down a Snort rule:
 
 > **`alert icmp any any -> &HOME_NET any (msg:"ICMP test"; sid:1000001; rev:1; classtype:icmp-event;)`**
 
@@ -205,7 +205,7 @@ Rule part | Information
   - **xxx -> xxx TCP TTL:64 TOS:0x0 ID:18112 IpLen:20 DgmLen:1500 DF**
   - Important info is bolded
 
-## <u>Evasion Concepts and Techniques</u>
+## Evasion Concepts and Techniques
 
 - **Insertion Attack** - Attacker forces the IDS to process invalid packets.
 
@@ -253,7 +253,7 @@ Rule part | Information
   - **NIDSbench** - Older tool for fragmenting bits
   - **Inundator** - Flooding tool
 
-## <u>Firewall Evasion</u>
+## Firewall Evasion
 - **Firewalking** - Using TTL values to determine gateway ACL filters and allow for mapping of internal networks by analyzing IP packet responses; Going through every port on a firewall to determine what is open.
 
 - **Banner Grabbing** - Looking for FTP, TELNET and web server banners.
@@ -287,7 +287,7 @@ Rule part | Information
   - 007 Shell
 - The best way around a firewall will always be a compromised internal machine
 
-## <u>How to detect a Honeypot</u>
+## How to detect a Honeypot
 *Probe services running on them; Ports that show a service is available, but **deny a three-way handshake may indicate that the system is a honeypot***.
 
 * **Layer 7 (Application)** - Examine latency of responses from server

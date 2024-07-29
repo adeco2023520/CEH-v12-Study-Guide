@@ -8,7 +8,7 @@ nav_order: 17
 - TOC
 {:toc}
 
-## <u>Concepts and Terminology</u>
+## Concepts and Terminology
 
 ### BSSID
 **Basic Service Set Identifier (BSSID)** - **MAC address** of the wireless access point 
@@ -34,7 +34,7 @@ nav_order: 17
 
 - **ISM Band** - The ISM radio bands are portions of the radio spectrum reserved internationally for industrial, scientific and medical (ISM) purposes other than telecommunications. Examples of applications for the use of radio frequency (RF) energy in these bands include radio-frequency process heating, microwave ovens, and medical diathermy machines.
 
-### **DSSS and FHSSS spectrums:**
+### DSSS and FHSSS spectrums:
 ![dsss](https://www.researchgate.net/profile/Edi_Kurniawan/publication/329286286/figure/fig1/AS:698501847580681@1543547226994/Frequency-spectrum-of-a-DSSS-b-FHSS.png)
 - **Direct-Sequence Spread Spectrum (DSSS)** - Combines all available waveforms into a single purpose. 
 
@@ -43,7 +43,7 @@ nav_order: 17
 
 - **Spectrum Analyzer** - verifies wireless quality, detects rogue access points and detects attacks
 
-### **Wireless Standards**:
+### Wireless Standards:
 | Wireless Standard | Operating Speed (Mbps) | Frequency (GHz) | Modulation Type |
 |-------------------|------------------------|-----------------|-----------------|
 | 802.11a           | 54 Mbps                    | 5 GHz               | OFDM            |
@@ -53,7 +53,7 @@ nav_order: 17
 | 802.11ac          | 1000 Mbps                  | 5 GHz              | QAM             |
 
 
-### **Authentication**
+### Authentication
 - **Three Types of Authentication**
   - **Open System** - no authentication
   - **Shared Key Authentication** - authentication through a shared key (password)
@@ -63,7 +63,7 @@ Antenna Types:
 
 > ⚠️ **RADIUS** is a networking protocol, operating on port 1812, that provides centralized Authentication, Authorization, and Accounting (AAA or Triple A) management for users who connect and use a network service.
 
-### **Antenna Types:**
+### Antenna Types:
 <p align="center">
 <img width="92%" src="https://mk0gcgablogq2ifx558u.kinstacdn.com/wp-content/uploads/2016/06/Wireless-Antenna.jpg" />
 </p>
@@ -82,10 +82,10 @@ Antenna Types:
 	* Half Omni (e.g stick to the wall the get one side signals).
 
 
-## <u>Wireless Encryption Schemes</u>
+## Wireless Encryption Schemes
 
 ## Wireless Security
-### **WEP** - Wireless Equivalency Privacy
+### WEP - Wireless Equivalency Privacy
 
 * 64/128 bit RC4 ICV 
 * **RC4** - Rivest Cipher 4 Stream Cipher Algorithm<br>
@@ -93,7 +93,7 @@ Antenna Types:
 
 > ⚠️ Very old and insecure
 
-### **WPA** - Wi-Fi Protected Access
+### WPA - Wi-Fi Protected Access
 
 * Uses RC4 with TKIP (Temporal Key Integrity Protocol)
 	- Initialization Vector (IV) is larger and an encrypted hash
@@ -117,7 +117,7 @@ Antenna Types:
 - TKIP has it's own set of vulnerabilities
 	- Deprecated in the 802.11-2012 standard
 
-### **WPA2** - Wi-Fi Protected Access v2
+### WPA2 - Wi-Fi Protected Access v2
 
 * **802.11i** IEEE standard
 * Enterprise
@@ -145,7 +145,7 @@ Antenna Types:
 
 ---
 
-## <u>Wireless Hacking</u>
+## Wireless Hacking
 
 - **Threats**
   - Access Control Attacks
@@ -173,7 +173,7 @@ Antenna Types:
   - **pcap** - driver library for Windows
   - **libpcap** - driver library for Linux
 
-## <u>Wireless Attacks</u>
+## Wireless Attacks
 
 - **Rogue Access Point** - Unauthorized access point plugged into a wired one. (Can be accidental)
   - Tools for Rogue AP: **Wi-Fi Pumpkin**, **Wi-Fi Pineapple**
@@ -189,9 +189,9 @@ Antenna Types:
   - Easily broken because you can sniff out MAC addresses already connected and spoof it
     - Tools for spoofing include: **SMAC** and **TMAC**
 
-## <u>Wireless Encryption Attacks</u>
+## Wireless Encryption Attacks
 
-### **WEP Cracking**
+### WEP Cracking
 - To crack the WEP key for an access point, we need to gather lots of initialization vectors (IVs). Attackers can use injection to speed up the process by replaying packets
 
 
@@ -203,7 +203,7 @@ Antenna Types:
   5. Start aireplay-ng in ARP request replay mode to inject packets
   6. Run aircrack-ng to crack key using the IVs collected
 
-### **WPA/WPA2 Cracking**
+### WPA/WPA2 Cracking
 - Much more difficult than WEP
 - Uses a constantly changing temporal key and user-defined password
 - **Key Reinstallation Attack** (KRACK) - replay attack that uses third handshake of another device's session
@@ -216,7 +216,7 @@ Antenna Types:
   4. Start `aircrack-ng` using a good wordlist to brute force the .cap file that you recorded on step 2.
 
 
-### **Tools:**
+### Tools:
 - **Aircrack-ng Suite** - is a complete suite of tools to assess WiFi network security.
   1. **Monitoring:** Packet capture and export of data to text files for further processing by third party tools.
   2. **Attacking:** Replay attacks, deauthentication, fake access points and others via packet injection.
@@ -239,13 +239,13 @@ Antenna Types:
 - Methods to crack include **PTW**, **FMS**, and **Korek** technique
 
 
-## <u>Bluetooth Attacks</u>
+## Bluetooth Attacks
   - **Bluesmacking** - Denial of service against device
   - **Bluejacking** - Sending unsolicited messages
   - **Bluebugging** - Remotely using a device's features
   - **Bluesnarfing** - Theft of data from a device
 
-## <u>Wireless Sniffing</u>
+## Wireless Sniffing
 
 - Very similar to sniffing a wired network
 - **Tools**

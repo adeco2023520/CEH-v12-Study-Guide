@@ -25,18 +25,18 @@ nav_order: 7
     - Clear MRU list in Windows
     - In Linux, append a dot in front of a file to hide it
 
-## <u>Password Attacks</u>
+## Password Attacks
 
 > ⚡︎ **Check out the practical labs on [Dumping and Cracking SAM hashes [1]](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/2-SAM-Hashes.md), [Rainbow Tables Basics [2]](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/3-Rainbow-tables.md) and [LLMNR/NBT-NS [3]](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/1-LLMNR-NBT-NS.md).**
 
-### **Non-electronic** - Non-technical attacks.
+### Non-electronic - Non-technical attacks.
   - Social engineering attacks - most effective.
   - Shoulder surfing 
   - Dumpster diving
   - Snooping around
   - Guessing
 
-### **Active online** - done by directly communicating with the victim's machine.
+### Active online - done by directly communicating with the victim's machine.
 
 - Includes **Dictionary** and **Brute-force attacks**, **hash injections, phishing, Trojans, spyware, keyloggers and password guessing**
 
@@ -62,7 +62,7 @@ nav_order: 7
     - `Hydra`
     - `Metasploit`
 
-### **Passive online** - **Sniffing** the wire in hopes of **intercepting** a password in clear text or attempting a replay attack or man-in-the-middle attack
+### Passive online - **Sniffing** the wire in hopes of **intercepting** a password in clear text or attempting a replay attack or man-in-the-middle attack
 
 - **Tools for Passive Online Attack:**
   - `Cain and Abel` - Can poison ARP and then monitor the victim's traffic; Also used for cracking hash passwords (LM, NTLM), sniff network packets for password, sniff out for local stored passwords, etc.
@@ -84,7 +84,7 @@ NetBIOS | 139,445
 SNMP | 161,162
 SQLnet | 1521
 
-### **Offline** - when the hacker steals a copy of the password file (Plaintext or Hash) and does the cracking on a separate system.
+### Offline - when the hacker steals a copy of the password file (Plaintext or Hash) and does the cracking on a separate system.
   
   - **Dictionary Attack** - uses a word list to attack the password.  Fastest method of attacking
 
@@ -133,7 +133,7 @@ SQLnet | 1521
 > - **Length of passwords** is good against **brute-force attacks.**
 > - **Password complexity** is good against **dictionary attacks.**
     
-## <u>Authentication</u>
+## Authentication
 
 - **Three Different Types**
   - **Something You Are** - Uses biometrics to validate identity (retina, fingerprint, etc.)
@@ -164,19 +164,19 @@ SQLnet | 1521
 - Older systems use LM hashing.  Current uses NTLM v2 (MD5)
 - Windows network authentication uses Kerberos
 
-### **LM Hashing**
+### LM Hashing
   - Splits the password up.  If it's over 7 characters, it is encoded in two sections.
   - If one section is blank, the hash will be `AAD3B435B51404EE`
   - Easy to break if password  is 7 characters or under because you can split the hash
 - SAM file presents as `UserName:SID:LM_Hash:NTLM_Hash:::`
 
-### **Ntds.dit**
+### Ntds.dit
 Database file on a domain controller that stores passwords
   - Located in %SystemRoot%\NTDS\Ntds.dit or
   - Located in %SystemRoot%System32\Ntds.dit
   - Includes the entire Active Directory
 
-### **Kerberos** for Active Directory Domain Services (AD DS)
+### Kerberos for Active Directory Domain Services (AD DS)
 
 
 ![kerberos](https://www.manageengine.com/products/active-directory-audit/kb/images/event-4771-kerberos-authentication-illustration.jpg)
@@ -193,7 +193,7 @@ Database file on a domain controller that stores passwords
 
 > ⚠️ **Uses TCP/UDP Port 88**
 
-### **Registry**
+### Registry
 ![registry](https://upload.wikimedia.org/wikipedia/en/5/52/Regstry_Editor.png)
   - Collection of all settings and configurations that make the system run
   - Made up of keys and values
@@ -217,21 +217,21 @@ Database file on a domain controller that stores passwords
   - Executables to edit
     - regedit.exe
     - regedt32.exe (preferred by Microsoft)
-### **MMC**
+### MMC
   ![mmc](https://upload.wikimedia.org/wikipedia/en/b/b7/Microsoft_Management_Console_-_Device_Manager.png)
   
   - Microsoft Management Console - used by Windows to administer system
   
   - Has "snap-ins" that allow you to modify sets (such as Group Policy Editor)
 
-### **Sigverif.exe**
+### Sigverif.exe
   - ![sigverif](https://cdn.ghacks.net/wp-content/uploads/2015/04/sigverif-file-signature-verification.jpg)
   - File Signature Verification (Sigverif.exe) detects signed files and allows you to:
     - View the certificates of signed files to verify that the file has not been tampered with after being certified.
     - Search for signed files.
     - Search for unsigned files.
 
-# <u>Linux Security Architecture</u>
+# Linux Security Architecture
 
 ### Linux Directory Structure
 - Linux root is just a slash (/)
@@ -317,12 +317,12 @@ Database file on a domain controller that stores passwords
     kali:$6$a/53BntOdPOaghAx$VCAdR3Af97cYTtWCtDp9iksacL3gj2Sgrb12EMix0ITuxc5jOQp1lbaRi.jNDsP2qjV3GvFAqd5Fu.8/7/P1.:18281:0:99999:7:::
     (...)
     ```
-## <u>Privilege Escalation and Executing Applications</u>
+## Privilege Escalation and Executing Applications
 
 > ⚡︎ **Check out the [practical lab on PrivEsc](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/5-Escalating-Privileges.md)**
 
-### **Vertical** - Lower-level user executes code at a higher privilege level *(e.g.: common user to root/administrator).*
-### **Horizontal** - executing code at the same user level but from a location that would be protected from that access
+### Vertical - Lower-level user executes code at a higher privilege level *(e.g.: common user to root/administrator).*
+### Horizontal - executing code at the same user level but from a location that would be protected from that access
 
 
 - Crack the password of an admin - primary aim
@@ -341,8 +341,8 @@ Database file on a domain controller that stores passwords
 - ECC refers executing applications as "owning" a system
 - **Executing applications** - starting things such as keyloggers, spyware, back doors and crackers
 
-## <u>Covert data gathering</u>
-### **Keyloggers** - record keys strokes of a individual computer keyboard or a network of computers.
+## Covert data gathering
+### Keyloggers - record keys strokes of a individual computer keyboard or a network of computers.
 
 - Keylogger when associated with spyware, hels to transmit your information to an unknown third party.
 
@@ -372,7 +372,7 @@ Database file on a domain controller that stores passwords
 
 
 
-### **Spywares** - watching user's action and logging them without the user's knowledege.
+### Spywares - watching user's action and logging them without the user's knowledege.
   - Hide its process, files and other objects
   - **Spywares can teals user's PII, monitors activity, display annoying pop-ups, redirect web pages to ads, changes the browser's settings, steal passwords, modifies the DLLs, changes firewall settings and so on**.
 - **Types of spyware:**
@@ -403,7 +403,7 @@ Database file on a domain controller that stores passwords
 - Host-based IDS
 - Automatic form-filling password manager or virtual keyboard
 
-## <u>Hiding Files</u>
+## Hiding Files
 
 > ⚡︎ **Check out the practical labs(2) on [Hiding Files using NTFS streams](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/8-NTFS-Streams.md) and [Steganography](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/9-Steganography.md)**
 
@@ -446,7 +446,7 @@ Database file on a domain controller that stores passwords
   - OpenStego
 
 
-## <u>Rootkits</u>
+## Rootkits
 
 - Software put in place by attacker to obscure system compromise
 - Hides processes and files
@@ -467,13 +467,13 @@ Database file on a domain controller that stores passwords
 - **Library level** - use system-level calls to hide themselves
 - One way to detect rootkits is to map all the files on a system and then boot a system from a clean CD version and compare the two file systems
 
-## <u>Covering Tracks</u>
+## Covering Tracks
 
 **Clearing logs is the main idea behind covering tracks.**
 1. Find and clear the logs.
 2. Falsify/Modify logs.
 
-### **On Linux:**
+### On Linux:
 - Linux keep the **command line history on `.bash_history`** file 
   - To clear out the command line history use `rm -rf` to force remove. You also can use `shred -zu` that deletes the file and **overwrite on memory**.
   - You can also use `history -c` to clear all command line history on entire system or `history -w` to clear out all session history.
@@ -502,7 +502,7 @@ Database file on a domain controller that stores passwords
   - To tamper/modify the log files, you can use `sed` stream editor to delete, replace and insert data.
     - `sed -i '/opened/d' /var/log/auth.log` - this command will delete every line that contains the '**opened**' word, that refers to opened sessions on Linux system. 
 
-### **On Windows:**
+### On Windows:
 - To clear out all **command line history**:
   - On **Cmd Prompt**: press [`alt`] + [`F7`]
   - On **PowerShell**: type `Clear-History`

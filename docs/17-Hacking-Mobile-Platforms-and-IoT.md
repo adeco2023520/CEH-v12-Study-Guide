@@ -8,7 +8,7 @@ nav_order: 18
 - TOC
 {:toc}
 
-# <u>A) Mobile Platform Hacking</u>
+# A) Mobile Platform Hacking
 
 - **Three Main Avenues of Attack**
   - **Device Attacks** - browser based, SMS, application attacks, rooted/jailbroken devices
@@ -42,7 +42,7 @@ nav_order: 18
 
 - **M10 - Extraneous Functionality** - Catchall for backdoors that were inadvertently placed by coders
 
-## <u>Mobile Platforms</u>
+## Mobile Platforms
 
 - **Android** - platform built by Google
   - **Rooting** - name given to the ability to have root access on an Android device
@@ -83,7 +83,7 @@ nav_order: 18
     - **Pairable** - accepts all requests
     - **Nonpairable** - rejects all connection requests
 
-## <u>Mobile Attacks</u>
+## Mobile Attacks
 All other attacks presented on previous chapter are suceptible to mobile devices too attacks like session hijacking, browser vulnerabilities, XSS, email, SMS, phone, OS/Apps bugs, excessive permissions and so on. Vulnerabilities on connection (Bluetooth, WiFi, NFC), encryption.
 
 
@@ -103,7 +103,7 @@ All other attacks presented on previous chapter are suceptible to mobile devices
   - DroidSheep
   - Nmap
 
-### <u>Bluetooth:</u>
+### Bluetooth:
 - **Bluetooth Attacks**
   - **Bluesmacking** - Denial of service against device
   - **Bluejacking** - Sending unsolicited messages
@@ -136,9 +136,9 @@ All other attacks presented on previous chapter are suceptible to mobile devices
 ⚠️ Companies should use **MDM policies** to accomplish mobile security.
 
 
-# <u>B) IoT Architecture</u>
+# B) IoT Architecture
 
-### **- What is IoT?**
+### - What is IoT?
 ***The Internet of Things (IoT)** describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the internet.*
 
 - Traditional fields of embedded systems, wireless sensor networks, control systems, automation (including home and building automation), and others all contribute to enabling the Internet of things.
@@ -148,7 +148,7 @@ All other attacks presented on previous chapter are suceptible to mobile devices
   - IoT gateways
   - The cloud
 
-### **Methods of Communicating**
+### Methods of Communicating
 *IoT connectivity boils down to how things connect to each other. Can be wired, wireless, 4G LTE, Bluetooth, GPS, LoRa, mesh networking, RFID, WiFi, Zigbee and Z-wave.*
 
   - **Device to Device** - Direct communication between two devices.
@@ -158,7 +158,7 @@ All other attacks presented on previous chapter are suceptible to mobile devices
 
 > ⚠️ **Zigbee** and **Z-Wave** is a wireless mesh networking protocol popular in home automation. 
 
-### **Edge Computing**
+### Edge Computing
 *Edge Computing is a distributed computing paradigm in which processing and computation are performed mainly on classified device nodes known as smart devices or edge devices as opposed to processed in a centralized cloud environment or data centers.*
 
 <p align="center">
@@ -169,14 +169,14 @@ All other attacks presented on previous chapter are suceptible to mobile devices
 
 > ⚠️ **Edge computing** handling data by pushing into the cloud. **Fog Computing** is more like keep things locally.
 
-### **Multi-Layer Architecture of IoT**
+### Multi-Layer Architecture of IoT
 - **Edge Technology Layer** - consists of sensors, RFID tags, readers and the devices
 - **Access Gateway Layer** - first data handling, message identification and routing
 - **Internet Layer** - crucial layer which serves as main component to allow communication
 - **Middleware Layer** - sits between application and hardware; handles data and device management, data analysis and aggregation
 - **Application Layer** - responsible for delivery of services and data to the user
 
-### **IoT Technology Protocols**
+### IoT Technology Protocols
 - **Short-Range Wireless:**
   - Bluetooth Low-energy (BLE)
   - Light-Fidelity (Li-Fi)
@@ -200,7 +200,7 @@ All other attacks presented on previous chapter are suceptible to mobile devices
   - Power-Line Communication (PLC)
   - Multimedia over Coax Alliance (MoCA)
 
-### **IoT Operating Systems** (probably wont ask)
+### IoT Operating Systems (probably wont ask)
 - **RIOT OS** - Embedded systems, actuator boards, sensors; is energy efficient
 - **ARM Mbed OS** - Mostly used on wearables and other low-powered devices
 - **RealSense OS X** - Intel's depth sensing version; mostly found in cameras and other sensors
@@ -212,25 +212,25 @@ All other attacks presented on previous chapter are suceptible to mobile devices
 - **Integrity RTOS** - Found in aerospace, medical, defense, industrial and automotive sensors
 - **Apache Mynewt** - Used in devices using Bluetooth Low Energy Protocol
 
-### **Geofencing**
+### Geofencing
 *Uses GPS and RFID technologies to create a virtual geographic boundary, like around your home property. A response is then triggered any time a mobile device enters or leaves the area.*
 
-### **Grid Computing**
+### Grid Computing
 Reduces costs by maximizing existing resources. This is accomplished with **multiple machines together to solve a specific problem.**
 
-### **Analytics of Things (AoT)**
+### Analytics of Things (AoT)
 - The analysis of IoT data, which is the data being generated by IoT sensors and devices.
 
-### **Industrial IoT (IIoT)**
+### Industrial IoT (IIoT)
 ![iiot](https://i1.wp.com/intellinium.io/wp-content/uploads/2016/12/iot_edited.png?w=800&ssl=1)
 
 *The industrial internet of things (IIoT) refers to the extension and use of the internet of things (IoT) in industrial sectors and applications. With a strong focus on machine-to-machine (M2M) communication, big data, and machine learning, the IIoT enables industries and enterprises to have better efficiency and reliability in their operations.*
 
 - **The IIoT encompasses industrial applications, including robotics, medical devices, and software-defined production processes.**
 
-## <u>IoT Vulnerabilities and Attacks:</u>
+## IoT Vulnerabilities and Attacks:
 
-### **OWASP Top 10 IoT Vulnerabilities (2018)**
+### OWASP Top 10 IoT Vulnerabilities (2018)
 
 - **1. Weak, guessable, or hardcoded passwords**
   - Use of easily bruteforced, publicly available, or unchangeable credentials, including backdoors in firmware or client software that grants unauthorized access to deployed systems.
@@ -259,7 +259,7 @@ and lack of notifications of security changes due to updates.
 
 ---
 
-## <u>Common IoT Attack Areas</u>
+## Common IoT Attack Areas
 1. Device memory containing credentials
 2. Device / Ecosystem Access Control
 3. Device Physical Interfaces / Fimrware extraction
@@ -275,7 +275,7 @@ and lack of notifications of security changes due to updates.
 13. Confidentiality and Integrity issues across the ecosystem
 14. Network traffic
 
-## <u>IoT Threats</u>
+## IoT Threats
 1. **DDoS Attack**
 2. **HVAC System attacks** - Attacks on HVAC (heating/airo) systems
 3. **Rolling code attack** - Used to steal cars; The ability to jam a key fob's communications, steal the code and then create a subsequent code
@@ -290,9 +290,9 @@ and lack of notifications of security changes due to updates.
 
 > ⚠️ **Other attacks already enumerated in other sections still apply such as MITM, ransomware, side channel, replay attack etc.**
 
-## <u>IoT Hacking Methodology</u>
+## IoT Hacking Methodology
 
-### **Steps**:
+### Steps:
 1. **Information Gathering** - gathering information about the devices; 
     - **Tools**:
       - Shodan
