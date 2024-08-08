@@ -1,5 +1,4 @@
 services:
-  info:
     container_name: "info"
     image: "bretfisher/jekyll-serve"
     volumes:
