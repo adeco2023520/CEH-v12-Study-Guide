@@ -50,7 +50,8 @@ nav_order: 17
 
 - **Spectrum Analyzer** - verifies wireless quality, detects rogue access points and detects attacks
 
-### Wireless Standards:
+### Wireless Standards
+
 | Wireless Standard | Operating Speed (Mbps) | Frequency (GHz) | Modulation Type |
 |-------------------|------------------------|-----------------|-----------------|
 | 802.11a           | 54 Mbps                    | 5 GHz               | OFDM            |
