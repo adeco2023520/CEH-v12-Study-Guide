@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 02 - Reconnaissance and Footprinting
+title: 03 - Scanning and Enumeration
 nav_order: 3
 ---
 # Scanning and Enumeration
