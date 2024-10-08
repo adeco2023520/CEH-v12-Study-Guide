@@ -96,7 +96,7 @@ Can be:
 ### Search Engines
 
 - **[NetCraft](https://www.netcraft.com/)** - Blueprint a comprehensive list of information about the technologies and information about target website.
-  - ![netcraft](https://i0.wp.com/hackingblogs.com/wp-content/uploads/2018/01/Capture-min-2.png)
+  - ![netcraft](https://img.informer.com/screenshots/6070/6070407_1.png)
 - **Job Search Sites** - Information about technologies can be gleaned from job postings.
 - **Google search | Google dorks:** 
   - `filetype:`  - looks for file types
@@ -133,7 +133,7 @@ Can be:
   - Email headers can provide: **Names, Addresses (IP, email), Mail servers, Time stamps, Authentication and so on.**
     - ![emailheader](https://www.wikihow.com/images/thumb/7/72/Read-Email-Headers-Step-7.jpg/v4-460px-Read-Email-Headers-Step-7.jpg.webp)
   - **EmailTrackerPro** is a Windows software that trace an email back to its true point of origin:
-    - ![emailtrackerpro](http://www.emailtrackerpro.com/support/v9/tutorials/images/traceheader/3.png)
+    - ![emailtrackerpro](https://d22blwhp6neszm.cloudfront.net/2/12932/anigif1.png)
 - **Email tracking** - services can track various bits of information including the IP address of where it was opened, where it went, etc.
 
 ### DNS Footprinting
